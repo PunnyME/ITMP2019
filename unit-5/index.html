@@ -5,6 +5,10 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="https://jabont.com/jayss/jayss.css">
 	<style>
+
+	body {
+		background-color: #FFBF00;
+	}
 	.fa-star{
 		opacity: .2;
 		cursor: pointer;
@@ -25,7 +29,7 @@
 					<sp class="l"></sp>
 					<img src="" class="circle shadow" id="u_profile">
 					<!-- username -->
-					<h1 class="cl-purple-a4">@<span id="u_username">_______</span></h1>
+					<h1 class="cl-yellow-a4">@<span id="u_username">_______</span></h1>
 					<!-- city -->
 					<h4><i class="fas fa-map-marker-alt"></i> <span id="u_city">_______</span></h4>
 					<sp></sp>
@@ -75,7 +79,7 @@
 
 		function rendata() {
 			u_fav.style.opacity = fav[nowIndex]+".2";
-			u_profile.src = `https://picsum.photos/id/${user[nowIndex].id}0/200/200`;
+			u_profile.src = `https://picsum.photos/id/${user[nowIndex].id}2/200/200`;
 			u_username.innerText = user[nowIndex].username;
 			u_city.innerText = user[nowIndex].address.city;
 			n_name.innerText = user[nowIndex].name
