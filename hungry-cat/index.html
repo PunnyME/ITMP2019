@@ -331,6 +331,10 @@
 		<div id="cat1_blank" x="3" y="13" ontouchstart="cat_catch(1)" ontouchend="cat_dont(1)"></div>
 		<div id="cat2_blank" x="15" y="13" ontouchstart="cat_catch(2)" ontouchend="cat_dont(2)"></div>
 	</div>
+	<audio src="sound/catch.wav" id="catch"></audio>
+	<audio src="sound/boom.wav" id="boom"></audio>
+	<audio src="sound/miss.wav" id="miss"></audio>
+	<audio src="sound/bgm.mp3" id="bgm"></audio>
 <!-- onclick="control_cat(1)"  -->
 	
 	<script>
@@ -339,8 +343,14 @@
 		cat1_status = 0;
 		cat2_status = 0;
 		control = 0;
+		catch_s = document.getElementById("catch");
+		boom_s = document.getElementById("boom");
+		miss_s = document.getElementById("miss");
+		bgm_s = document.getElementById("bgm");
 
 		function gameStart() {
+
+	        bgm_s.play();
 
 			let u1 = document.querySelectorAll(".unit1");
 			for (var i = 0; i < u1.length; i++) {
@@ -394,6 +404,7 @@
 			u.setAttribute("id","unit1_"+nowID);
 			wrap.appendChild(u);
 			nowID++;
+
 		}
 
 		function newUnit2(){
@@ -416,6 +427,11 @@
 				u[i].setAttribute("x", nowX + 1);
 				u[i].setAttribute("y", nowY + 1);
 
+				var sound_catch1 = true;
+				var sound_boom1 = true;
+				var sound_miss1 = true;
+				
+
 				if (nowY == 15 && nowX == 16) {
 
 					if (cat2_status == 1) {
@@ -425,10 +441,22 @@
 
 	                            score++;
 	                            document.getElementById('score').innerHTML = score;
+	                            if (sound_catch1) {
+	                            	catch_s.pause();
+	                            	catch_s.currentTime = 0;
+	                            	catch_s.play();
+	                            	sound_catch1 = false;
+	                            }
 
 	                    }else if (document.getElementsByClassName("unit1")[i].className == "unit1"+" "+"u"+0 == true ){
 
 	                        	bomb(2);
+	                        	if (sound_boom1) {
+	                            	boom_s.pause();
+	                            	boom_s.currentTime = 0;
+	                            	boom_s.play();
+	                            	sound_boom1 = false;
+	                            }
 
 	                    }
 
@@ -442,6 +470,12 @@
 	                    	||document.getElementsByClassName("unit1")[i].className == "unit1"+" "+"u"+2 == true){
 
 	                            miss();
+	                        	if (sound_miss1) {
+	                            	miss_s.pause();
+	                            	miss_s.currentTime = 0;
+	                            	miss_s.play();
+	                            	sound_miss1 = false;
+	                            }
 
 	                    }
 
@@ -464,6 +498,11 @@
 				nowX = parseInt(nowX);
 				u[i].setAttribute("x", nowX - 1);
 				u[i].setAttribute("y", nowY + 1);
+
+				var sound_catch2 = true;
+				var sound_boom2 = true;
+				var sound_miss2 = true;
+
 				if (nowY == 15 && nowX == 4) {
 
 					if (cat1_status == 1) {
@@ -473,10 +512,22 @@
 
 	                            score++;
 	                        	document.getElementById('score').innerHTML = score;
+	                        	if (sound_catch2) {
+	                            	catch_s.pause();
+	                            	catch_s.currentTime = 0;
+	                            	catch_s.play();
+	                            	sound_catch2 = false;
+	                            }
 
 	                    }else if (document.getElementsByClassName("unit2")[i].className == "unit2"+" "+"u"+0 == true ){
 
 	                            bomb(1);
+	                            if (sound_boom2) {
+	                            	boom_s.pause();
+	                            	boom_s.currentTime = 0;
+	                            	boom_s.play();
+	                            	sound_boom2 = false;
+	                            }
 
 	                    }
 
@@ -488,6 +539,12 @@
 	                    	||document.getElementsByClassName("unit2")[i].className == "unit2"+" "+"u"+2 == true){
 
 	                            miss();
+	                        	if (sound_miss2) {
+	                            	miss_s.pause();
+	                            	miss_s.currentTime = 0;
+	                            	miss_s.play();
+	                            	sound_miss2 = false;
+	                            }
 
 	                    }
 
@@ -551,6 +608,8 @@
             clearInterval(skyfall2);
             control = 0;
 
+            bgm_s.pause();
+			bgm_s.currentTime = 0;
 		}
 
 		function cat_catch(num) {
