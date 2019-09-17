@@ -12,6 +12,7 @@
 		margin:0;
 		font-family: sans-serif;
 		background: black;
+		-webkit-touch-callout: none;
 	}
 	#wrap{
 		width: 100%;
@@ -326,8 +327,8 @@
 		<div id="cat2_miss" x="16" y="18"></div>
 		<div id="cat1_boom" x="2" y="13"></div>
 		<div id="cat2_boom" x="14" y="13"></div>
-		<div id="cat1_blank" x="4" y="18" onmousedown="cat_catch(1)" onmouseup="cat_dont(1)"></div>
-		<div id="cat2_blank" x="16" y="18" onmousedown="cat_catch(2)" onmouseup="cat_dont(2)"></div>
+		<div id="cat1_blank" x="4" y="18" onmousedown="cat_catch(1)" onmouseup="cat_dont(1)" ontouchstart="cat_catch(1)" ontouchend="cat_dont(1)"></div>
+		<div id="cat2_blank" x="16" y="18" onmousedown="cat_catch(2)" onmouseup="cat_dont(2)" ontouchstart="cat_catch(2)" ontouchend="cat_dont(2)"></div>
 	</div>
 
 	
