@@ -13,6 +13,7 @@
 		font-family: sans-serif;
 		background: black;
 		-webkit-touch-callout: none;
+		-webkit-text-security: none;
 	}
 	#wrap{
 		width: 100%;
@@ -199,9 +200,9 @@
 
 	#score {
 		color: #f0f0f0;
-		text-shadow: 0px 8px #00B3B3;
+    	text-shadow: 0em 0.14em #00B3B3;
 		font-family: 'Press Start 2P', cursive;
-		font-size: 10em;
+		font-size: 7em;
 		height: 50vh;
 		display: flex;
 		align-items: center;
@@ -241,9 +242,8 @@
 		}
     #name>div {
     		font-family: 'Press Start 2P', cursive;
-    		text-shadow: 0px 8px #00B3B3;
-			font-size: 7em;
-			padding: auto;
+    		text-shadow: 0em 0.14em #00B3B3;
+			font-size: 7vw;
 			margin: auto;
 			border-radius: 1.25rem;
 			user-select: none;
@@ -251,10 +251,10 @@
 		}
 	#play>div {
 			font-family: 'Press Start 2P', cursive;
-			text-shadow: 0px 8px #00B3B3;
-			font-size: 4em;
-			padding: 50px 100px;
-			margin: 20px;
+			text-shadow: 0em 0.14em #00B3B3;
+			font-size: 4vw;
+			padding: 0.05em 0.5em;
+			margin: 2em;
 			border-radius: 1.25rem;
 			cursor: pointer;
 			transition: all .1s;
@@ -304,7 +304,7 @@
 </head>
 <body>
 	<div id="menu">
-		<div id="innerMenu1">
+		<div id="innerMenu">
 			<div id="name">
 				<div>HUNGRY CAT</div>
 			</div>
