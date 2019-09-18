@@ -5,6 +5,7 @@
 	<meta charset=utf-8>
 	<meta name=description content="">
 	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="cat2.png" />
 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
 
 	<style type="text/css">
@@ -201,10 +202,24 @@
 
 	#score {
 		color: #f0f0f0;
-    	text-shadow: 0em 0.14em #00B3B3;
+    	text-shadow: 0em 0.1em #00B3B3;
 		font-family: 'Press Start 2P', cursive;
-		font-size: 7em;
-		height: 50vh;
+		font-size: 7vw;
+		height: 40vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all .1s;
+		transform: scale(0);
+		-webkit-text-security: none;
+	}
+
+	#best_score {
+		color: #f0f0f0;
+    	text-shadow: 0em 0.1em #00B3B3;
+		font-family: 'Press Start 2P', cursive;
+		font-size: 3vw;
+		height: 0vh;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -215,11 +230,12 @@
 
 	#menu {
 			width: 100%;
-			height: 80vh;
+			height: 100vh;
 			position: absolute;
 			top: 0;
 			left: 0;
 			z-index: 10000;
+			/*background-color: rgba(0, 0, 0, 0.5);*/
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -244,7 +260,7 @@
 		}
     #name>div {
     		font-family: 'Press Start 2P', cursive;
-    		text-shadow: 0em 0.14em #00B3B3;
+    		text-shadow: 0em 0.1em #00B3B3;
 			font-size: 7vw;
 			margin: auto;
 			border-radius: 1.25rem;
@@ -253,7 +269,7 @@
 		}
 	#play>div {
 			font-family: 'Press Start 2P', cursive;
-			text-shadow: 0em 0.14em #00B3B3;
+			text-shadow: 0em 0.1em #00B3B3;
 			font-size: 4vw;
 			padding: 0.05em 0.5em;
 			margin: 2em;
@@ -317,7 +333,8 @@
 
 	<div id="wrap">
 		
-		<div id="score"></div>		
+		<div id="score"></div>
+		<div id="best_score"></div>
 		<div id="cat1_catch" x="4" y="18"></div>
 		<div id="cat2_catch" x="16" y="18"></div>
 		<div id="cat1" x="4" y="18"></div>
@@ -340,6 +357,7 @@
 	<script>
 		nowID = 0;
 		score = 0;
+		best = 0;
 		cat1_status = 0;
 		cat2_status = 0;
 		control = 0;
@@ -362,6 +380,10 @@
 				u2[i].outerHTML = "";
 			}
 
+			// letplay1 = setInterval(function(){newUnit1();},1000)
+			// letplay2 = setInterval(function(){newUnit2();},1000)
+			// skyfall1 = setInterval(function(){falling1();},100)
+			// skyfall2 = setInterval(function(){falling2();},100)
 			letplay1 = setInterval(function(){newUnit1();},450)
 			letplay2 = setInterval(function(){newUnit2();},450)
 			skyfall1 = setInterval(function(){falling1();},120)
@@ -387,17 +409,18 @@
 			document.getElementById('name').style.transform = 'scale(0)';
 			document.getElementById('play').style.transform = 'scale(0)';
 			document.getElementById('score').style.transform = 'scale(1)';
+			document.getElementById('best_score').style.transform = 'scale(0)';
 			document.getElementById('score').innerHTML = 0;
 
 			clearInterval(cat1_boom_ani);
         	clearInterval(cat2_boom_ani);
 
-		}		
+		}
 
 		function newUnit1(){
 			let u = document.createElement("div");
-			u.setAttribute("x", 1);
-			u.setAttribute("y", 0);
+			u.setAttribute("x", 2);
+			u.setAttribute("y", 1);
 			u.setAttribute("class","unit1 u"+rand(5));
 			u.setAttribute("id","unit1_"+nowID);
 			wrap.appendChild(u);
@@ -407,15 +430,19 @@
 
 		function newUnit2(){
 			let u = document.createElement("div");
-			u.setAttribute("x", 19);
-			u.setAttribute("y", 0);
+			u.setAttribute("x", 18);
+			u.setAttribute("y", 1);
 			u.setAttribute("class","unit2 u"+rand(5));
 			u.setAttribute("id","unit2_"+nowID);
 			wrap.appendChild(u);
 			nowID++;
+			// clearInterval(cat1_catch_ani);
 		}
 
 		function falling1() {
+
+			
+
 			let u = document.querySelectorAll(".unit1");
 			for (var i = 0; i < u.length; i++) {
 				let nowY = u[i].getAttribute("y");
@@ -437,8 +464,11 @@
 	                    if (document.getElementsByClassName("unit1")[i].className == "unit1"+" "+"u"+1 == true 
 	                    	||document.getElementsByClassName("unit1")[i].className == "unit1"+" "+"u"+2 == true){
 
-	                            score++;
-	                            document.getElementById('score').innerHTML = score;
+	                            // score++;
+	                            // document.getElementById('score').innerHTML = score;
+
+	                            scorePlus();
+
 	                            if (sound_catch1) {
 	                            	catch_s.pause();
 	                            	catch_s.currentTime = 0;
@@ -488,6 +518,7 @@
 		}
 
 		function falling2() {
+
 			let u = document.querySelectorAll(".unit2");
 			for (var i = 0; i < u.length; i++) {
 				let nowY = u[i].getAttribute("y");
@@ -508,8 +539,14 @@
 	                    if (document.getElementsByClassName("unit2")[i].className == "unit2"+" "+"u"+1 == true 
 	                    	||document.getElementsByClassName("unit2")[i].className == "unit2"+" "+"u"+2 == true){
 
-	                            score++;
-	                        	document.getElementById('score').innerHTML = score;
+	                         //    score++;
+	                        	// document.getElementById('score').innerHTML = score;
+
+	                        	//cat1_catch.style.transform = 'scaleX(1.3)';
+        						//cat1_catch_ani = setInterval(function() {cat1_catch.style.transform = "scale(1)";},70);
+
+        						scorePlus();
+
 	                        	if (sound_catch2) {
 	                            	catch_s.pause();
 	                            	catch_s.currentTime = 0;
@@ -530,6 +567,7 @@
 	                    }
 
 						u[i].outerHTML = "";
+						
 
 	                }
 					else if (cat1_status == 0) {
@@ -561,11 +599,6 @@
 
 			stop();
 
-            cat1.style.transform = 'scale(0)';
-        	cat1_catch.style.transform = 'scale(0)';
-        	cat2.style.transform = 'scale(0)';
-        	cat2_catch.style.transform = 'scale(0)';
-
 			if (event == 1) {
         		cat1_boom.style.transform = 'scale(1)';
         		cat1_bomb.style.transform = 'scale(1)';
@@ -579,22 +612,14 @@
         		cat2_boom_ani = setInterval(function() {cat2_boom.style.transform = "scale(0)";},250);
 			}
 
-			document.getElementById('play').style.transform = 'scale(1)';
-
 		}
 
 		function miss() {
 
 			stop();
 
-            cat1.style.transform = 'scale(0)';
-        	cat1_catch.style.transform = 'scale(0)';
-        	cat2.style.transform = 'scale(0)';
-        	cat2_catch.style.transform = 'scale(0)';
         	cat1_miss.style.transform = 'scale(1)';
-        	cat2_miss.style.transform = 'scale(1)';
-
-        	document.getElementById('play').style.transform = 'scale(1)';
+        	cat2_miss.style.transform = 'scale(1)';      	
 
 		}
 
@@ -604,10 +629,34 @@
             clearInterval(skyfall1);
             clearInterval(letplay2);
             clearInterval(skyfall2);
+
+            cat1.style.transform = 'scale(0)';
+        	cat1_catch.style.transform = 'scale(0)';
+        	cat2.style.transform = 'scale(0)';
+        	cat2_catch.style.transform = 'scale(0)';
+
+            best_score.style.transform = 'scale(1)';
+        	document.getElementById('best_score').innerHTML = "BEST SCORE : " + best;
+
+        	document.getElementById('play').style.transform = 'scale(1)';
+
             control = 0;
 
             bgm_s.pause();
 			bgm_s.currentTime = 0;
+		}
+
+		function scorePlus() {
+
+			score++;
+	        document.getElementById('score').innerHTML = score;
+	        
+	        if (score > best) {
+
+	        	best = score;
+
+	        }
+
 		}
 
 		function cat_catch(num) {
@@ -713,23 +762,29 @@
         	cat1_status = 1;	
         }
 
-        else if (code === 37 && cat1_status == 1 && control == 1) {
+        if (code === 39 && cat2_status == 0 && control == 1) {
+        	cat2.style.transform = 'scale(0)';
+        	cat2_catch.style.transform = 'scale(1)';
+        	cat2_status = 1;
+        }};
+
+        window.onkeyup = function (e) {
+        var code = e.keyCode ? e.keyCode : e.which;
+
+        if (code === 37 && cat1_status == 1 && control == 1) {
         	cat1_catch.style.transform = 'scale(0)';
         	cat1.style.transform = 'scale(1)';
         	cat1_status = 0;
         }
 
-        if (code === 39 && cat2_status == 0 && control == 1) {
-        	cat2.style.transform = 'scale(0)';
-        	cat2_catch.style.transform = 'scale(1)';
-        	cat2_status = 1;
-        }
-
-        else if (code === 39 && cat2_status == 1 && control == 1) {
+		if (code === 39 && cat2_status == 1 && control == 1) {
         	cat2_catch.style.transform = 'scale(0)';
         	cat2.style.transform = 'scale(1)';
+        	cat2_catch.style.transform = 'scale(0)';
         	cat2_status = 0;
         }};
+
+        
 
         function rand(max) {
 			return Math.floor(Math.random() * Math.floor(max));
