@@ -18,7 +18,7 @@
 		-webkit-user-select: none;
 	}
 	#wrap{
-		width: 100%;
+		width: 100vw;
 		height: 100vh;
 		position: relative;
 		background-image: url('background.png');
@@ -26,8 +26,8 @@
 	}
 
 	.unit1{
-		height: 20%;
-		width: 20%;
+		height: 20vh;
+		width: 20vw;
 		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -37,8 +37,8 @@
 		transition: all .1s;
 	}
 	.unit2{
-		height: 20%;
-		width: 20%;
+		height: 20vh;
+		width: 20vw;
 		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -69,8 +69,8 @@
 	}
 	#cat1{
 		background-image: url('cat1.png');
-		height: 20%;
-		width: 20%;
+		height: 20vh;
+		width: 20vw;
 		background-size: contain;
 		background-position: center bottom;
 		background-repeat: no-repeat;
@@ -80,8 +80,8 @@
 	}
 	#cat2{
 		background-image: url('cat2.png');
-		height: 20%;
-		width: 20%;
+		height: 20vh;
+		width: 20vw;
 		background-size: contain;
 		background-position: center bottom;
 		background-repeat: no-repeat;
@@ -91,8 +91,8 @@
 	}
 	#cat1_catch{
 		background-image: url('cat1_catch.png');
-		height: 20%;
-		width: 20%;
+		height: 20vh;
+		width: 20vw;
 		background-size: contain;
 		background-position: center bottom;
 		background-repeat: no-repeat;
@@ -102,8 +102,8 @@
 	}
 	#cat2_catch{
 		background-image: url('cat2_catch.png');
-		height: 20%;
-		width: 20%;
+		height: 20vh;
+		width: 20vw;
 		background-size: contain;
 		background-position: center bottom;
 		background-repeat: no-repeat;
@@ -113,8 +113,8 @@
 	}
 	#cat1_bomb{
 		background-image: url('cat1_bomb.png');
-		height: 20%;
-		width: 20%;
+		height: 20vh;
+		width: 20vw;
 		background-size: contain;
 		background-position: center bottom;
 		background-repeat: no-repeat;
@@ -124,8 +124,8 @@
 	}
 	#cat2_bomb{
 		background-image: url('cat2_bomb.png');
-		height: 20%;
-		width: 20%;
+		height: 20vh;
+		width: 20vw;
 		background-size: contain;
 		background-position: center bottom;
 		background-repeat: no-repeat;
@@ -135,8 +135,8 @@
 	}
 	#cat1_miss{
 		background-image: url('cat1_miss.png');
-		height: 20%;
-		width: 20%;
+		height: 20vh;
+		width: 20vw;
 		background-size: contain;
 		background-position: center bottom;
 		background-repeat: no-repeat;
@@ -146,8 +146,8 @@
 	}
 	#cat2_miss{
 		background-image: url('cat2_miss.png');
-		height: 20%;
-		width: 20%;
+		height: 20vh;
+		width: 20vw;
 		background-size: contain;
 		background-position: center bottom;
 		background-repeat: no-repeat;
@@ -157,8 +157,8 @@
 	}
 	#cat1_boom{
 		background-image: url('boom.png');
-		height: 40%;
-		width: 40%;
+		height: 40vh;
+		width: 40vw;
 		background-size: contain;
 		background-position: center bottom;
 		background-repeat: no-repeat;
@@ -168,8 +168,8 @@
 	}
 	#cat2_boom{
 		background-image: url('boom.png');
-		height: 40%;
-		width: 40%;
+		height: 40vh;
+		width: 40vw;
 		background-size: contain;
 		background-position: center bottom;
 		background-repeat: no-repeat;
@@ -179,8 +179,8 @@
 	}
 	#cat1_blank{
 		background-image: url('blank.png');
-		height: 40%;
-		width: 30%;
+		height: 48vh;
+		width: 50vw;
 		background-size: contain;
 		background-position: center bottom;
 		background-repeat: no-repeat;
@@ -191,8 +191,8 @@
 	}
 	#cat2_blank{
 		background-image: url('blank.png');
-		height: 40%;
-		width: 30%;
+		height: 48vh;
+		width: 50vw;
 		background-size: contain;
 		background-position: center bottom;
 		background-repeat: no-repeat;
@@ -338,8 +338,8 @@
 		<div id="cat2_miss" x="16" y="18"></div>
 		<div id="cat1_boom" x="2" y="13"></div>
 		<div id="cat2_boom" x="14" y="13"></div>
-		<div id="cat1_blank" x="3" y="13" onmousedown="cat_catch(1)" onmouseup="cat_dont(1)" ontouchstart="cat_catch(1)" ontouchend="cat_dont(1)"></div>
-		<div id="cat2_blank" x="15" y="13" onmousedown="cat_catch(2)" onmouseup="cat_dont(2)" ontouchstart="cat_catch(2)" ontouchend="cat_dont(2)"></div>
+		<div id="cat1_blank" x="2" y="12" onmousedown="cat_catch(1)" onmouseup="cat_dont(1)" ontouchstart="cat_catch(1)" ontouchend="cat_dont(1)"></div>
+		<div id="cat2_blank" x="12" y="12" onmousedown="cat_catch(2)" onmouseup="cat_dont(2)" ontouchstart="cat_catch(2)" ontouchend="cat_dont(2)"></div>
 	</div>
 	<div id="menu">
 		<div id="innerMenu">
@@ -358,6 +358,7 @@
 <!-- onclick="control_cat(1)"  -->
 	
 	<script>
+
 		nowID = 0;
 		score = 0;
 		best = 0;
@@ -383,10 +384,6 @@
 				u2[i].outerHTML = "";
 			}
 
-			// letplay1 = setInterval(function(){newUnit1();},1000)
-			// letplay2 = setInterval(function(){newUnit2();},1000)
-			// skyfall1 = setInterval(function(){falling1();},100)
-			// skyfall2 = setInterval(function(){falling2();},100)
 			letplay1 = setInterval(function(){newUnit1();},450)
 			letplay2 = setInterval(function(){newUnit2();},450)
 			skyfall1 = setInterval(function(){falling1();},120)
@@ -415,9 +412,6 @@
 			document.getElementById('best_score').style.transform = 'scale(0)';
 			document.getElementById('score').innerHTML = 0;
 
-			clearInterval(cat1_boom_ani);
-        	clearInterval(cat2_boom_ani);
-
 		}
 
 		function newUnit1(){
@@ -439,12 +433,9 @@
 			u.setAttribute("id","unit2_"+nowID);
 			wrap.appendChild(u);
 			nowID++;
-			// clearInterval(cat1_catch_ani);
 		}
 
-		function falling1() {
-
-			
+		function falling1() {			
 
 			let u = document.querySelectorAll(".unit1");
 			for (var i = 0; i < u.length; i++) {
@@ -457,8 +448,7 @@
 
 				var sound_catch1 = true;
 				var sound_boom1 = true;
-				var sound_miss1 = true;
-				
+				var sound_miss1 = true;				
 
 				if (nowY == 15 && nowX == 16) {
 
@@ -467,12 +457,8 @@
 	                    if (document.getElementsByClassName("unit1")[i].className == "unit1"+" "+"u"+1 == true 
 	                    	||document.getElementsByClassName("unit1")[i].className == "unit1"+" "+"u"+2 == true){
 
-	                            // score++;
-	                            // document.getElementById('score').innerHTML = score;
-
 	                            cat2_catch.style.transform = 'scale(1.3,0.9)';
         						setTimeout(function() {cat2_catch.style.transform = "scale(1)";},100);
-
 
 	                            scorePlus();
 
@@ -491,7 +477,7 @@
 	                            	boom_s.currentTime = 0;
 	                            	boom_s.play();
 	                            	sound_boom1 = false;
-	                            }
+	                        }
 
 	                    }
 
@@ -510,7 +496,8 @@
 	                            	miss_s.currentTime = 0;
 	                            	miss_s.play();
 	                            	sound_miss1 = false;
-	                            }
+
+	                        }
 
 	                    }
 
@@ -521,7 +508,9 @@
                     u[i].outerHTML = "";
 
                 }
+
 			}
+
 		}
 
 		function falling2() {
@@ -545,9 +534,6 @@
 
 	                    if (document.getElementsByClassName("unit2")[i].className == "unit2"+" "+"u"+1 == true 
 	                    	||document.getElementsByClassName("unit2")[i].className == "unit2"+" "+"u"+2 == true){
-
-	                         //    score++;
-	                        	// document.getElementById('score').innerHTML = score;
 
 	                        	cat1_catch.style.transform = 'scale(1.3,0.9)';
         						setTimeout(function() {cat1_catch.style.transform = "scale(1)";},100);
@@ -592,6 +578,7 @@
 	                    }
 
 	                }
+
                 }else if (nowY == 17) {
 
                     u[i].outerHTML = "";
@@ -610,13 +597,13 @@
         		cat1_boom.style.transform = 'scale(1)';
         		cat1_bomb.style.transform = 'scale(1)';
         		cat2_miss.style.transform = 'scale(1)';
-        		cat1_boom_ani = setInterval(function() {cat1_boom.style.transform = "scale(0)";},250);
+        		setTimeout(function() {cat1_boom.style.transform = "scale(0)";},250);
 			}
 			if (event == 2) {
 				cat2_boom.style.transform = 'scale(1)';
         		cat1_miss.style.transform = 'scale(1)';
         		cat2_bomb.style.transform = 'scale(1)';
-        		cat2_boom_ani = setInterval(function() {cat2_boom.style.transform = "scale(0)";},250);
+        		setTimeout(function() {cat2_boom.style.transform = "scale(0)";},250);
 			}
 
 		}
@@ -651,6 +638,7 @@
 
             bgm_s.pause();
 			bgm_s.currentTime = 0;
+
 		}
 
 		function scorePlus() {
@@ -789,9 +777,7 @@
         	cat2.style.transform = 'scale(1)';
         	cat2_catch.style.transform = 'scale(0)';
         	cat2_status = 0;
-        }};
-
-        
+        }};        
 
         function rand(max) {
 			return Math.floor(Math.random() * Math.floor(max));
