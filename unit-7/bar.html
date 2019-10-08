@@ -25,7 +25,7 @@
 	#topLine{
 		height: 2px;
 		background: deeppink;
-		width: 10%;
+		width: 0%;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -43,38 +43,38 @@
 </style>
 </head>
 <body>
-	<div class="parent bg-smoke padding-l v-middle-flex">
+	<div id="d1" class="parent bg-smoke padding-l v-middle-flex">
 		<div class="to-center">
 			<h1>Welcome</h1>
 			<p>Please scroll down</p>
 		</div>
 	</div>
-	<div class="parent bg-white padding-l v-middle-flex">
+	<div id="d2" class="parent bg-white padding-l v-middle-flex">
 		<div class="to-center">
 			<h1>My Learning</h1>
 			<sp class="xl"></sp>
 			<div class="t-left">
 				<div class="bar">
 					<div class="label">Thai</div>
-					<div class="chart close" style="width: 180px"></div>
+					<div id="learning1" class="chart close" style="width: 180px"></div>
 				</div>
 				<div class="bar">
 					<div class="label">English</div>
-					<div class="chart close" style="width: 200px"></div>
+					<div id="learning2" class="chart close" style="width: 200px"></div>
 				</div>
 				<div class="bar">
 					<div class="label">Sciene</div>
-					<div class="chart close" style="width: 20px"></div>
+					<div id="learning3" class="chart close" style="width: 20px"></div>
 				</div>
 				<div class="bar">
 					<div class="label">Math</div>
-					<div class="chart close" style="width: 40px"></div>
+					<div id="learning4" class="chart close" style="width: 40px"></div>
 				</div>
 			</div>
 		</div>
 ​
 	</div>
-	<div class="parent bg-smoke padding-l v-middle-flex">
+	<div id="d3" class="parent bg-smoke padding-l v-middle-flex">
 		<div class="to-center">
 			<h1>I'm Genius, right?</h1>
 			<sp class="xl"></sp>
@@ -96,13 +96,55 @@
 		let bodyR = document.body.getBoundingClientRect();
 		let y = window.pageYOffset;
 		let yBottom = window.pageYOffset+window.innerHeight;
+
 		function onScroll(){
 			bodyR = document.body.getBoundingClientRect();
 			y = window.pageYOffset;
 			yBottom = window.pageYOffset+window.innerHeight;
 		}
+
 		window.addEventListener("scroll", onScroll);
-​
+
+		function topLineStatus() {
+
+			load = (y / (bodyR.height - d3.offsetHeight)) * 100;
+			topLine.style.width = `${load}%`;
+
+		}
+
+		window.addEventListener("scroll", topLineStatus);
+
+		function learningStatus(){
+			let ey = d2.offsetTop;
+			let ebottom = ey+d2.offsetHeight;
+			if (yBottom>ey+400 && y<ebottom-600) {
+				learning1.classList.remove('close');
+				learning2.classList.remove('close');
+				learning3.classList.remove('close');
+				learning4.classList.remove('close');
+			}
+			else{
+				learning1.classList.add('close');
+				learning2.classList.add('close');
+				learning3.classList.add('close');
+				learning4.classList.add('close');
+			}
+		}
+
+		window.addEventListener("scroll", learningStatus);
+
+		function paragraphStatus(){
+			let ey = d3.offsetTop;
+			if (yBottom>ey+600) {
+				paragraph.classList.remove('small');
+			}
+			else{
+				paragraph.classList.add('small');
+			}
+		}
+
+		window.addEventListener("scroll", paragraphStatus);
+
 	</script>
 </body>
 </html>

@@ -83,11 +83,13 @@
 
 
 	<script type="text/javascript">
+		
 		function rotateNongYoyo(){
 			let r = window.pageYOffset;
 			yoyo.style.transform = `rotate(${r}deg)`;
 		}
 		window.addEventListener("scroll", rotateNongYoyo);
+
 		function blinkThat(){
 			let ey = d3.offsetTop;
 			let ebottom = ey+d3.offsetHeight; 

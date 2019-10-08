@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>
-		
-	</title>
+	<title>ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบนอันเนื่องมาจากพระราชดำริ</title>
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet">
   <style type="text/css">
@@ -14,6 +12,7 @@
       display: flex;
       justify-content: center;  
       background-color: #F1A595;
+      z-index: 5;
     }
 
     ul {
@@ -24,14 +23,16 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
+      z-index: 3;
     }
 
     li a {
         font-family: 'Mitr', sans-serif;
         display: block;
         color: #0D4776;
+        font-size: 1vw;
         text-align: center;
-        padding: 1.2vw 2.2vw;
+        padding: 0.8vw 2.2vw;
         text-decoration: none;
     }
 
@@ -49,8 +50,16 @@
       position: relative;
       color: white;
       top: 23vw;
-      left: 38vw;
+      left: 36vw;
       width: 30vw;
+    }
+
+    .navback{
+    width: 100%;
+    height: 3vw;
+    position: fixed;
+    background: white;
+    z-index: 3;
     }
   </style>
 </head>
@@ -58,6 +67,7 @@
 
       <header class="navigation">
         <nav>
+          <div id="navback" class="navback"></div>
             <ul>
                 <li><a href="#home">หน้าหลัก</a></li>
                 <li><a href="#news">ประวัติ</a></li>
@@ -68,26 +78,12 @@
             </ul>
         </nav>
     </header>
-    <div id="d1" style="height: 60.5em;width: 100%;background: #F1A595">
+
+    <div id="d1" style="height: 300em;width: 100%;background: #F1A595;">
       <h1 style="font-size: 2vw;">ศูนย์ศึกษาการพัฒนา</h1>
       <h1 style="font-size: 3.8vw;">อ่าวคุ้งกระเบน</h1>
       <h1 style="font-size: 2vw;">อันเนื่องมาจากพระราชดำริ</h1>
     </div>
-    <div id="d2" style="height: 60.5em;width: 100%;background: #0FB49E"></div>
-    <div id="d3" style="height: 60.5em;width: 100%;background: #F1A595"></div>
-    <div id="d4" style="height: 60.5em;width: 100%;background: #0FB49E"></div>
-    <div id="d5" style="height: 60.5em;width: 100%;background: #F1A595"></div>
-    <div id="d6" style="height: 60.5em;width: 100%;background: #0FB49E"></div>
-    <div id="d7" style="height: 60.5em;width: 100%;background: #F1A595"></div>
-    <div id="d8" style="height: 60.5em;width: 100%;background: #0FB49E"></div>
-    <div id="d9" style="height: 60.5em;width: 100%;background: #F1A595"></div>
-    <div id="d10" style="height: 60.5em;width: 100%;background: #0FB49E"></div>
-    <div id="d11" style="height: 60.5em;width: 100%;background: #F1A595"></div>
-    <div id="d12" style="height: 60.5em;width: 100%;background: #0FB49E"></div>
-    <div id="d13" style="height: 60.5em;width: 100%;background: #F1A595"></div>
-    <div id="d14" style="height: 60.5em;width: 100%;background: #0FB49E"></div>
-    <div id="d15" style="height: 60.5em;width: 100%;background: #F1A595"></div>
-    <div id="d16" style="height: 60.5em;width: 100%;background: #0FB49E"></div>
 
 </body>
 </html>
