@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบนอันเนื่องมาจากพระราชดำริ</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Trirong&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
+  <style type="text/css">
+
+    body {margin:0;}
+
+    #d1 {
+      width: 100%;
+      height: 145vw;
+      position: relative;
+      background-color: #F1A595;
+      z-index: 2;
+    }
+
+    #d2 {
+      width: 100%;
+      height: 140vw;
+      position: relative;
+      background-color: #32B6BD;
+      z-index: 3;
+    }
+
+    .navigation nav {
+      display: flex;
+      justify-content: center;  
+      background-color: #f4f4f4;
+      z-index: 5;
+    }
+
+    ul {
+      /*position: fixed;*/
+      display: flex;
+      flex-flow: row wrap;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      z-index: 3;
+    }
+
+    li a {
+        font-family: 'Prompt', sans-serif;
+        height: 3vw;
+        display: block;
+        color: #0D4776;
+        font-size: 1vw;
+        text-align: center;
+        padding: 1vw 2.5vw;
+        text-decoration: none;
+        z-index: 5;
+    }
+
+    a:hover {
+        color: #0FB49E;
+        transition: all 0.4s;
+    }
+
+    .head {
+      background: #f4f4f4;
+      font-family: 'Prompt', sans-serif;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      display: block;
+      position: relative;
+      color: #0D4776;
+      /*display: flex;*/
+      text-align: center;
+      justify-content: center;
+      /*left: 36vw;*/
+      width: 100%;
+    }
+
+    .navback{
+    width: 0%;
+    height: 5vw;
+    /*position: fixed;*/
+    background: #f4f4f4;
+    z-index: 4;
+    }
+
+    .sticky {
+      position: fixed;
+      display: flex;
+      flex-flow: row wrap;
+      list-style-type: none;
+      top:0;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      z-index: 4;
+    }
+
+    .stickyBack {
+      width: 100%;
+      position: fixed;
+      display: flex;
+      flex-flow: row wrap;
+      list-style-type: none;
+      top:0;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      z-index: 4;
+    }
+
+    #r9 {
+      background-image: url('pic/about/r9.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 25vw;
+      width: 25vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: relative;
+      top: 13vw;
+      left: 25vw;
+      z-index: 3;
+    }
+
+    #about {
+      font-family: 'Prompt', sans-serif;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      display: block;
+      position: relative;
+      color: #0D4776;
+      /*display: flex;*/
+      text-align: center;
+      justify-content: center;
+      top: 2vw;
+      left: 25vw;
+      width: 65vw;
+      z-index: 6;
+    }
+
+    .topic {
+      font-family: 'Prompt', sans-serif;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      display: block;
+      position: relative;
+      color: #0D4776;
+      text-align: left;
+      justify-content: center;
+      width: 65vw;
+      z-index: 6;
+    }
+
+    .pg {
+      font-family: 'Mitr', sans-serif;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      display: block;
+      position: relative;
+      color: #0D4776;
+      text-align: left;
+      justify-content: center;
+      width: 52vw;
+      z-index: 6;
+    }
+
+    #b1 {
+      background-image: url('pic/about/b1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 35vw;
+      width: 35vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: relative;
+      top: -32.1vw;
+      left: -0.2vw;
+      z-index: 3;
+    }
+
+    #b2 {
+      background-image: url('pic/about/b2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 35vw;
+      width: 35vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: relative;
+      top: -70vw;
+      left: 14vw;
+      z-index: 3;
+    }
+
+    #b3 {
+      background-image: url('pic/about/b3.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 25vw;
+      width: 25vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: relative;
+      top: -90vw;
+      left: 74.1vw;
+      z-index: 3;
+    }
+
+    #walking {
+      background-image: url('pic/about/walking.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 90vw;
+      width: 100%;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: relative;
+      top: -123vw;
+      z-index: 3;
+    }
+
+    #people {
+      background-image: url('pic/about/people.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 90vw;
+      width: 100%;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: relative;
+      top: -154.6vw;
+      z-index: 3;
+    }
+
+    #cloude1 {
+      background-image: url('pic/about/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 3;
+      -webkit-animation: cloudemove1 86s infinite;
+    }
+
+    #cloude2 {
+      background-image: url('pic/about/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 3;
+      -webkit-animation: cloudemove2 54s infinite;
+    }
+
+    #cloude3 {
+      background-image: url('pic/about/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      -webkit-animation: cloudemove3 46s infinite;
+    }
+
+    #cloude4 {
+      background-image: url('pic/about/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      -webkit-animation: cloudemove4 52s infinite;
+    }
+
+    #cloude5 {
+      background-image: url('pic/about/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      -webkit-animation: cloudemove5 38s infinite;
+    }
+
+    #cloude6 {
+      background-image: url('pic/about/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      -webkit-animation: cloudemove6 62s infinite;
+    }
+
+    #cloude7 {
+      background-image: url('pic/about/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      -webkit-animation: cloudemove7 44s infinite;
+    }
+
+    #cloude8 {
+      background-image: url('pic/about/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      -webkit-animation: cloudemove8 69s infinite;
+    }
+
+    @-webkit-keyframes cloudemove1 {
+      from {left: 10vw;}
+      to {left: 48vw;}
+    }
+
+    @-webkit-keyframes cloudemove2 {
+      from {left: 25vw;}
+      to {left: 70vw;}
+    }
+
+    @-webkit-keyframes cloudemove3 {
+      from {left: 39vw;}
+      to {left: 80vw;}
+    }
+
+    @-webkit-keyframes cloudemove4 {
+      from {left: 10vw;}
+      to {left: 60vw;}
+    }
+
+    @-webkit-keyframes cloudemove5 {
+      from {left: 20vw;}
+      to {left: 71vw;}
+    }
+
+    @-webkit-keyframes cloudemove6 {
+      from {left: 25vw;}
+      to {left: 63vw;}
+    }
+
+    @-webkit-keyframes cloudemove7 {
+      from {left: 45vw;}
+      to {left: 75vw;}
+    }
+
+    @-webkit-keyframes cloudemove8 {
+      from {left: 45vw;}
+      to {left: 80vw;}
+    }
+
+  </style>
+</head>
+<body>
+
+  <div>
+    <header>
+      <h1 class="head" style="font-size: 1vw;"><b><br>ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบน<br>อันเนื่องมาจากพระราชดำริ</b></h1>
+      <h1 class="head" style="font-size: 1vw;"><br></h1>
+    </header>
+  </div>
+
+      <header class="navigation">
+        <nav>
+          <div id="navback" class="navback"></div>
+            <ul id="navbar">
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="about.html">ประวัติ</a></li>
+                <li><a href="#about">สถานที่ท่องเที่ยว</a></li>
+                <li><a href="#contact">ผลงาน</a></li>
+                <li><a href="#about">โครงงานและ<br>งานกิจกรรม</a></li>
+                <li><a href="#about">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="d1">
+
+      <div id="r9"></div>
+      <div id="cloude1" style=" top: 36vw; left: 22vw; width: 12vw; height: 3vw;"></div>
+      <div id="cloude2" style=" top: 40vw; left: 22vw; width: 12vw; height: 4vw;"></div>
+      <div id="cloude3" style=" top: 24vw; left: 60vw; width: 12vw; height: 5vw;"></div>
+      <div id="cloude4" style=" top: 117vw; left: 15vw; width: 15vw; height: 7vw;"></div>
+      <div id="cloude5" style=" top: 125vw; left: 20vw; width: 15vw; height: 4vw;"></div>
+      <div id="cloude6" style=" top: 113vw; left: 30vw; width: 15vw; height: 5vw;"></div>
+      <div id="cloude7" style=" top: 119vw; left: 35vw; width: 15vw; height: 3vw;"></div>
+      <div id="cloude8" style=" top: 130vw; left: 45vw; width: 15vw; height: 5vw;"></div>
+
+      <h1 id="about" style="font-size: 2.5vw;"><b>เกี่ยวกับ</b></h1>
+
+      <h1 class="topic" style="font-size: 1.6vw; top: 22vw; left: 23vw;"><b>ศูนย์ศึกษาการศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบนอันเนื่องมาจากพระราชดำริ</b></h1>
+
+      <p class='pg' style="font-size: 1.3vw; top: 23vw; left: 24vw;">ได้เริ่มก่อตั้งตามพระราชดำริพระบาทสมเด็จพระเจ้าอยู่หัวปริทรมหาภูมิพลอดุลเดชในคราวเสด็จประกอบพิธีเปิดพระบรมราชานุเสาวรีย์สมเด็จพระเจ้าตากสินมหาราช ที่จังหวัดจันทบุรี เมื่อวันที่ 28 ธันวาคมพ.ศ.2524โดยมีพระราชดำริแก่ผู้ว่าราชการจังหวัดจันทบุรี "ให้พิจารณาพื้นที่ที่เหมาะสมจัดทำโครงการพัฒนา
+      ด้านอาชีพการประมงและการเกษตรในเขตพื้นที่ดินชายฝั่งทะเลจันทบุรี"<br><br>
+      จังหวัดจันทบุรีได้ร่วมหารือกับหน่วยงานต่างๆที่เกี่ยวข้องและพิจารณาความเหมาะสมจึงกำหนดพื้นที่ตำบล
+      คลองขุด อำเภอท่าใหม่ จังหวัดจันทบุรีเป็นพื้นที่จัดตั้งศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบนฯตั้งแต่ปี พ.ศ.๒๕๒๕ ศูนย์ศึกษาดังกล่าวเป็นหน่วยงานที่ดำเนินการศึกษาสาธิตและการพัฒนาในเขตที่ดินชายทะเลโดยวิธีการ
+      ผสมผสานความรู้อันหลากหลายของแต่ละหน่วยงานเพื่อวางแผนพัฒนาการจัดการทรัพยากรที่มีอยู่ให้เหมาะสม
+      และยั่งยืนตลอดไป<br><br>
+      เมื่อวันที่ 26 สิงหาคม 2531 ได้มีพระราชดำริเกี่ยวกับศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบนฯในโอกาส
+      ที่ประธานคณะกรรมการพิเศษเพื่อประสานงานโครงการอันเนื่องมาจากพระราชดำรินำผู้เข้าร่วมสัมมนาและ
+      บุคคลต่าง ๆ ที่เกี่ยวข้องเฝ้าฯ เพื่อรับพระราชทานพระบรมราโชบายเกี่ยวกับการดำเนินงานในช่วงต่อไป
+      ณ ศาลาดุสิดาลัย</p>
+
+      <br><br><br>
+
+      <h1 class="topic" style="font-size: 1.6vw; top: 22vw; left: 23vw;"><b>พื้นที่ดำเนินการ</b></h1>
+
+      <p class='pg' style="font-size: 1.3vw; top: 23vw; left: 24vw;">พื้นที่ดำเนินการและพื้นที่ขยายผลศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบนฯ ครอบคลุม 33 หมู่บ้านในตำบลคลองขุด, ตำบลรำพัน, ตำบลโขมง อำเภอท่าใหม่ และ ตำบลสนามไชย, ตำบลกระแจะ อำเภอนายายอาม จังหวัดจันทบุรีมีพื้นที่ประมาณ 71,025 ไร่ โดยมีรายละเอียดดังนี้<br><br>
+      1. พื้นที่ศูนย์กลาง<br>
+      ได้แก่ บริเวณอ่าวคุ้งกระเบน และพื้นที่โดยรอบ ซึ่งครอบคลุมพื้นที่ ประมาณ 4,000 ไร่ การดำเนินกิจกรรม จะเป็นการผสมผสานระหว่างป่าไม้และประมง<br><br>
+      2. พื้นที่รอบนอก<br>
+      ได้แก่พื้นที่ตำบลคลองขุด ตำบลรำพัน อำเภอท่าใหม่ และตำบลสนามไชย ตำบลกระแจะ อำเภอนายายอาม ซึ่งเป็นทั้งเขตเกษตรกรรม และเขตหมู่บ้านประมงตลอดแนวชายฝั่ง มีพื้นที่ประมาณ 57,025 ไร่ การดำเนินกิจกรรมมุ่งเน้นการส่งเสริมการเกษตรแบบบูรณาการ<br><br>
+      3. พื้นที่ขยายผล<br>
+      ได้แก่ พื้นที่ ตำบลรำพัน ตำบลโขมง ตำบลเสม็ดโพธิ์ศรี อำเภอท่าใหม่ และพื้นที่ใกล้เคียงศูนย์ฯ มีพื้นที่ประมาณ 10,000 ไร่ เป็นการส่งเสริมและพัฒนาอาชีพที่ประสบความสำเร็จ ในศูนย์ฯ สู่พื้นที่โดยรอบ</p>
+
+    </div>
+    <div id="d2">
+
+      <div id="b1"></div>
+      <div id="b2"></div>
+      <div id="b3"></div>
+      <h1 class="topic" style="font-size: 1.6vw; top: -41vw; left: 30vw;"><b>วัตถุประสงค์ของศูนย์ฯ</b></h1>
+
+      <p class='pg' style="font-size: 1.3vw; top: -40vw; left: 31vw; width: 38vw;">1. เพื่อศึกษารูปแบบการจัดการทรัพยากรชายฝั่งอย่างยั่งยืน<br>
+      2. เพื่อเป็นศูนย์กลางในการอบรมและเผยแพร่ผลการศึกษาการจัดการทรัพยากรชายฝั่ง ให้แก่ส่วนราชการและภาคเอกชนทั่วไป<br>
+      3. เพื่อยกระดับฐานะความเป็นอยู่ อาชีพของราษฎรบริเวณรอบอ่าวคุ้งกระเบนและพื้นที่ใกล้เคียง โดยมุ่งเน้นพัฒนาช่วยเหลือราษฎรที่มีฐานะยากจน<br>
+      4. เพื่อพัฒนาด้านการประมงและการเพาะเลี้ยงสัตว์น้ำชายฝั่งเพื่อเป็นการเพิ่มผลผลิตของประเทศ และเป็นพื้นฐานของการพัฒนาด้านการประมง ตลอดจน
+      พัฒนากิจกรรม ทางด้านอื่น ๆ ควบคู่ไปด้วย<br>
+      5. เพื่ออนุรักษ์สภาพแวดล้อมและดุลยภาพทางธรรมชาติให้คงลักษณะพิเศษ
+      ของพื้นที่เอาไว้</p>
+      <div id="walking"></div>
+      
+
+      <div id="people"></div>
+    </div>
+    <script type="text/javascript">
+      
+      window.onscroll = function() {myFunction()};
+
+      var navbar = document.getElementById("navbar");
+      var navback = document.getElementById("navback");
+
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+          navback.classList.add("stickyBack");
+        } else {
+          navbar.classList.remove("sticky");
+          navback.classList.remove("stickyBack");
+        }
+      }
+
+
+    </script>
+
+</body>
+</html>
