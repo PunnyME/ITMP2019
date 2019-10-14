@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Trirong&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8bb0907cde.js" crossorigin="anonymous"></script>
   <style type="text/css">
 
     body {
@@ -68,6 +69,7 @@
       margin: 0;
       border: 0;
       padding: 0;
+      font-size: 1vw;
       display: block;
       position: relative;
       color: #0D4776;
@@ -78,17 +80,40 @@
     }
 
     .navback{
-    width: 0%;
-    height: 5vw;
-    background: #f4f4f4;
-    z-index: 4;
+      width: 0%;
+      height: 5vw;
+      background: #f4f4f4;
+      z-index: 4;
     }
 
     .d0{
-    width: 100%;
-    height: 4vw;
-    background-color: #F1A595;
-    z-index: 1;
+      width: 100%;
+      height: 4vw;
+      background-color: #F1A595;
+      z-index: 1;
+    }
+
+    .fas {
+      color: #0D4776;
+      position: absolute;
+      z-index: 6;
+      padding-top: 4vw;
+      padding-left: 7.5vw;
+      width: 4vw;
+      font-size: 0vw;
+    }
+
+    #click {
+      background-image: url('pic/about/blank.png');
+      height: 16.6vh;
+      width: 20vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      transform: scale(0);
+      -webkit-text-security: none;
+      z-index: 7;
     }
 
     .sticky {
@@ -138,6 +163,7 @@
       margin: 0;
       border: 0;
       padding: 0;
+      font-size: 2.5vw;
       display: block;
       position: relative;
       color: #0D4776;
@@ -163,6 +189,18 @@
       z-index: 6;
     }
 
+    .t1 {
+      font-size: 1.6vw;
+      top: 22vw;
+      left: 23vw;
+    }
+
+    .t2 {
+      font-size: 1.6vw;
+      top: -19vw;
+      left: 30vw;
+    }
+
     .pg {
       font-family: 'Mitr', sans-serif;
       margin: 0;
@@ -175,6 +213,19 @@
       justify-content: center;
       width: 52vw;
       z-index: 6;
+    }
+
+    .p1 {
+      font-size: 1.3vw;
+      top: 23vw;
+      left: 24vw;
+    }
+
+    .p2 {
+      font-size: 1.3vw;
+      top: -18vw;
+      left: 31vw;
+      width: 38vw;
     }
 
     #b1 {
@@ -261,6 +312,10 @@
       margin: 0;
       border: 0;
       padding: 0;
+      top: 36vw;
+      left: 22vw;
+      width: 12vw;
+      height: 3vw;
       background-size: contain;
       background-position: center bottom;
       background-repeat: no-repeat;
@@ -274,6 +329,10 @@
       margin: 0;
       border: 0;
       padding: 0;
+      top: 40vw;
+      left: 22vw;
+      width: 12vw;
+      height: 4vw;
       background-size: contain;
       background-position: center bottom;
       background-repeat: no-repeat;
@@ -287,6 +346,10 @@
       margin: 0;
       border: 0;
       padding: 0;
+      top: 24vw;
+      left: 60vw;
+      width: 12vw;
+      height: 5vw;
       background-size: contain;
       background-position: center bottom;
       background-repeat: no-repeat;
@@ -300,6 +363,10 @@
       margin: 0;
       border: 0;
       padding: 0;
+      top: 117vw;
+      left: 15vw;
+      width: 15vw;
+      height: 7vw;
       background-size: contain;
       background-position: center bottom;
       background-repeat: no-repeat;
@@ -313,6 +380,10 @@
       margin: 0;
       border: 0;
       padding: 0;
+      top: 125vw;
+      left: 20vw;
+      width: 15vw;
+      height: 4vw;
       background-size: contain;
       background-position: center bottom;
       background-repeat: no-repeat;
@@ -326,6 +397,10 @@
       margin: 0;
       border: 0;
       padding: 0;
+      top: 113vw;
+      left: 30vw;
+      width: 15vw;
+      height: 5vw;
       background-size: contain;
       background-position: center bottom;
       background-repeat: no-repeat;
@@ -339,6 +414,10 @@
       margin: 0;
       border: 0;
       padding: 0;
+      top: 119vw;
+      left: 35vw;
+      width: 15vw;
+      height: 3vw;
       background-size: contain;
       background-position: center bottom;
       background-repeat: no-repeat;
@@ -352,6 +431,10 @@
       margin: 0;
       border: 0;
       padding: 0;
+      top: 130vw;
+      left: 45vw;
+      width: 15vw;
+      height: 5vw;
       background-size: contain;
       background-position: center bottom;
       background-repeat: no-repeat;
@@ -400,14 +483,295 @@
       to {left: 83vw;}
     }
 
+    @media only screen and (max-width: 1024px) {
+
+      #d1 {
+        width: 100%;
+        height: 265vw;
+        position: relative;
+        background-color: #F1A595;
+        z-index: 2;
+      }
+
+      #d2 {
+        width: 100%;
+        height: 140vw;
+        position: relative;
+        background-color: #32B6BD;
+        z-index: 3;
+      }
+
+      #r9 {
+        background-image: url('pic/about/r9.png');
+        margin: 0;
+        border: 0;
+        padding: 0;
+        height: 40vw;
+        width: 40vw;
+        background-size: contain;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        position: relative;
+        top: 20vw;
+        left: 15vw;
+        z-index: 3;
+      }
+
+      #about {
+        font-family: 'Prompt', sans-serif;
+        margin: 0;
+        border: 0;
+        padding: 0;
+        font-size: 4.5vw;
+        display: block;
+        position: relative;
+        color: #0D4776;
+        text-align: center;
+        justify-content: center;
+        top: -2vw;
+        left: 33vw;
+        width: 65vw;
+        z-index: 6;
+      }
+
+      .navigation nav {
+        position: absolute;
+        z-index: 0;
+      }
+
+      #d0 {
+        position: absolute;
+        z-index: 0;
+      }
+
+      .fas {
+            color: #0D4776;
+            position: fixed;
+            z-index: 6;
+            padding: 4vw 7.5vw;
+            width: 4vw;
+            font-size: 7.5vw;
+      }
+
+      #click {
+        background-image: url('pic/about/blank.png');
+        height: 15.3vw;
+        width: 20vw;
+        background-size: contain;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        position: absolute;
+        transform: scale(1);
+        -webkit-text-security: none;
+        z-index: 7;
+      }
+
+      .head {
+        background: #f4f4f4;
+        font-family: 'Prompt', sans-serif;
+        margin: 0;
+        border: 0;
+        padding: 0;
+        font-size: 2.5vw;
+        display: block;
+        position: fixed;
+        color: #0D4776;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        z-index: 4;
+      }
+
+      .t1 {
+        font-size: 3vw;
+        top: 22vw;
+        left: 20vw;
+        width: 65vw
+      }
+
+      .t2 {
+        font-size: 3vw;
+        top: -12vw;
+        left: 20vw;
+      }
+
+      .p1 {
+        font-size: 2.5vw;
+        top: 23vw;
+        left: 21vw;
+        width: 60vw
+      }
+
+      .p2 {
+        font-size: 2.5vw;
+        top: -11vw;
+        left: 21vw;
+        width: 60vw;
+      }
+
+      #walking {
+        background-image: url('pic/about/walking.png');
+        margin: 0;
+        border: 0;
+        padding: 0;
+        height: 90vw;
+        width: 100%;
+        background-size: contain;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        position: relative;
+        top: -125vw;
+        z-index: 3;
+      }
+
+      #cloude1 {
+        background-image: url('pic/about/cloude.png');
+        margin: 0;
+        border: 0;
+        padding: 0;
+        top: 53vw;
+        left: 22vw;
+        width: 20vw;
+        height: 6vw;
+        background-size: contain;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 3;
+        -webkit-animation: cloudemove1 86s infinite;
+      }
+
+      #cloude2 {
+        background-image: url('pic/about/cloude.png');
+        margin: 0;
+        border: 0;
+        padding: 0;
+        top: 55vw;
+        left: 22vw;
+        width: 20vw;
+        height: 8vw;
+        background-size: contain;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 3;
+        -webkit-animation: cloudemove2 54s infinite;
+      }
+
+      #cloude3 {
+        background-image: url('pic/about/cloude.png');
+        margin: 0;
+        border: 0;
+        padding: 0;
+        top: 35vw;
+        left: 60vw;
+        width: 20vw;
+        height: 6vw;
+        background-size: contain;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 1;
+        -webkit-animation: cloudemove3 46s infinite;
+      }
+
+      #cloude4 {
+        background-image: url('pic/about/cloude.png');
+        margin: 0;
+        border: 0;
+        padding: 0;
+        top: 237vw;
+        left: 15vw;
+        width: 20vw;
+        height: 7vw;
+        background-size: contain;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 1;
+        -webkit-animation: cloudemove4 52s infinite;
+      }
+
+      #cloude5 {
+        background-image: url('pic/about/cloude.png');
+        margin: 0;
+        border: 0;
+        padding: 0;
+        top: 243vw;
+        left: 20vw;
+        width: 20vw;
+        height: 5vw;
+        background-size: contain;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 1;
+        -webkit-animation: cloudemove5 49s infinite;
+      }
+
+      #cloude6 {
+        background-image: url('pic/about/cloude.png');
+        margin: 0;
+        border: 0;
+        padding: 0;
+        top: 232vw;
+        left: 30vw;
+        width: 20vw;
+        height: 7vw;
+        background-size: contain;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 1;
+        -webkit-animation: cloudemove6 62s infinite;
+      }
+
+      #cloude7 {
+        background-image: url('pic/about/cloude.png');
+        margin: 0;
+        border: 0;
+        padding: 0;
+        top: 237vw;
+        left: 35vw;
+        width: 15vw;
+        height: 4vw;
+        background-size: contain;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 1;
+        -webkit-animation: cloudemove7 57s infinite;
+      }
+
+      #cloude8 {
+        background-image: url('pic/about/cloude.png');
+        margin: 0;
+        border: 0;
+        padding: 0;
+        top: 243vw;
+        left: 45vw;
+        width: 15vw;
+        height: 5vw;
+        background-size: contain;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 1;
+        -webkit-animation: cloudemove8 79s infinite;
+      }
+
+    }
+
   </style>
 </head>
 <body>
 
   <div>
+    <a id="click" href="index.html"></a>
+    <i class="fas fa-chevron-left">
+    </i>
     <header>
-      <h1 class="head" style="font-size: 1vw;"><b><br>ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบน<br>อันเนื่องมาจากพระราชดำริ</b></h1>
-      <h1 class="head" style="font-size: 1vw;"><br></h1>
+      <h1 class="head"><b><br>ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบน<br>อันเนื่องมาจากพระราชดำริ<br><br></b></h1>
     </header>
   </div>
 
@@ -428,20 +792,20 @@
     <div id="d1">
 
       <div id="r9"></div>
-      <div id="cloude1" style=" top: 36vw; left: 22vw; width: 12vw; height: 3vw;"></div>
-      <div id="cloude2" style=" top: 40vw; left: 22vw; width: 12vw; height: 4vw;"></div>
-      <div id="cloude3" style=" top: 24vw; left: 60vw; width: 12vw; height: 5vw;"></div>
-      <div id="cloude4" style=" top: 117vw; left: 15vw; width: 15vw; height: 7vw;"></div>
-      <div id="cloude5" style=" top: 125vw; left: 20vw; width: 15vw; height: 4vw;"></div>
-      <div id="cloude6" style=" top: 113vw; left: 30vw; width: 15vw; height: 5vw;"></div>
-      <div id="cloude7" style=" top: 119vw; left: 35vw; width: 15vw; height: 3vw;"></div>
-      <div id="cloude8" style=" top: 130vw; left: 45vw; width: 15vw; height: 5vw;"></div>
+      <div id="cloude1"></div>
+      <div id="cloude2"></div>
+      <div id="cloude3"></div>
+      <div id="cloude4"></div>
+      <div id="cloude5"></div>
+      <div id="cloude6"></div>
+      <div id="cloude7"></div>
+      <div id="cloude8"></div>
 
-      <h1 id="about" style="font-size: 2.5vw;"><b>เกี่ยวกับ</b></h1>
+      <h1 id="about"><b>เกี่ยวกับ</b></h1>
 
-      <h1 class="topic" style="font-size: 1.6vw; top: 22vw; left: 23vw;"><b>ศูนย์ศึกษาการศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบนอันเนื่องมาจากพระราชดำริ</b></h1>
+      <h1 class="topic t1"><b>ศูนย์ศึกษาการศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบนอันเนื่องมาจากพระราชดำริ</b></h1>
 
-      <p class='pg' style="font-size: 1.3vw; top: 23vw; left: 24vw;">ได้เริ่มก่อตั้งตามพระราชดำริพระบาทสมเด็จพระเจ้าอยู่หัวปริทรมหาภูมิพลอดุลเดชในคราวเสด็จประกอบพิธีเปิดพระบรมราชานุเสาวรีย์สมเด็จพระเจ้าตากสินมหาราช ที่จังหวัดจันทบุรี เมื่อวันที่ 28 ธันวาคมพ.ศ.2524โดยมีพระราชดำริแก่ผู้ว่าราชการจังหวัดจันทบุรี "ให้พิจารณาพื้นที่ที่เหมาะสมจัดทำโครงการพัฒนา
+      <p class='pg p1'>ได้เริ่มก่อตั้งตามพระราชดำริพระบาทสมเด็จพระเจ้าอยู่หัวปริทรมหาภูมิพลอดุลเดชในคราวเสด็จประกอบพิธีเปิดพระบรมราชานุเสาวรีย์สมเด็จพระเจ้าตากสินมหาราช ที่จังหวัดจันทบุรี เมื่อวันที่ 28 ธันวาคมพ.ศ.2524โดยมีพระราชดำริแก่ผู้ว่าราชการจังหวัดจันทบุรี "ให้พิจารณาพื้นที่ที่เหมาะสมจัดทำโครงการพัฒนา
       ด้านอาชีพการประมงและการเกษตรในเขตพื้นที่ดินชายฝั่งทะเลจันทบุรี"<br><br>
       จังหวัดจันทบุรีได้ร่วมหารือกับหน่วยงานต่างๆที่เกี่ยวข้องและพิจารณาความเหมาะสมจึงกำหนดพื้นที่ตำบล
       คลองขุด อำเภอท่าใหม่ จังหวัดจันทบุรีเป็นพื้นที่จัดตั้งศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบนฯตั้งแต่ปี พ.ศ.๒๕๒๕ ศูนย์ศึกษาดังกล่าวเป็นหน่วยงานที่ดำเนินการศึกษาสาธิตและการพัฒนาในเขตที่ดินชายทะเลโดยวิธีการ
@@ -454,9 +818,9 @@
 
       <br><br><br>
 
-      <h1 class="topic" style="font-size: 1.6vw; top: 22vw; left: 23vw;"><b>พื้นที่ดำเนินการ</b></h1>
+      <h1 class="topic t1"><b>พื้นที่ดำเนินการ</b></h1>
 
-      <p class='pg' style="font-size: 1.3vw; top: 23vw; left: 24vw;">พื้นที่ดำเนินการและพื้นที่ขยายผลศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบนฯ ครอบคลุม 33 หมู่บ้านในตำบลคลองขุด, ตำบลรำพัน, ตำบลโขมง อำเภอท่าใหม่ และ ตำบลสนามไชย, ตำบลกระแจะ อำเภอนายายอาม จังหวัดจันทบุรีมีพื้นที่ประมาณ 71,025 ไร่ โดยมีรายละเอียดดังนี้<br><br>
+      <p class='pg p1'>พื้นที่ดำเนินการและพื้นที่ขยายผลศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบนฯ ครอบคลุม 33 หมู่บ้านในตำบลคลองขุด, ตำบลรำพัน, ตำบลโขมง อำเภอท่าใหม่ และ ตำบลสนามไชย, ตำบลกระแจะ อำเภอนายายอาม จังหวัดจันทบุรีมีพื้นที่ประมาณ 71,025 ไร่ โดยมีรายละเอียดดังนี้<br><br>
       1. พื้นที่ศูนย์กลาง<br>
       ได้แก่ บริเวณอ่าวคุ้งกระเบน และพื้นที่โดยรอบ ซึ่งครอบคลุมพื้นที่ ประมาณ 4,000 ไร่ การดำเนินกิจกรรม จะเป็นการผสมผสานระหว่างป่าไม้และประมง<br><br>
       2. พื้นที่รอบนอก<br>
@@ -470,9 +834,9 @@
       <div id="b1"></div>
       <div id="b2"></div>
       <div id="b3"></div>
-      <h1 class="topic" style="font-size: 1.6vw; top: -19vw; left: 30vw;"><b>วัตถุประสงค์ของศูนย์ฯ</b></h1>
+      <h1 class="topic t2"><b>วัตถุประสงค์ของศูนย์ฯ</b></h1>
 
-      <p class='pg' style="font-size: 1.3vw; top: -18vw; left: 31vw; width: 38vw;">1. เพื่อศึกษารูปแบบการจัดการทรัพยากรชายฝั่งอย่างยั่งยืน<br>
+      <p class='pg p2'>1. เพื่อศึกษารูปแบบการจัดการทรัพยากรชายฝั่งอย่างยั่งยืน<br>
       2. เพื่อเป็นศูนย์กลางในการอบรมและเผยแพร่ผลการศึกษาการจัดการทรัพยากรชายฝั่ง ให้แก่ส่วนราชการและภาคเอกชนทั่วไป<br>
       3. เพื่อยกระดับฐานะความเป็นอยู่ อาชีพของราษฎรบริเวณรอบอ่าวคุ้งกระเบนและพื้นที่ใกล้เคียง โดยมุ่งเน้นพัฒนาช่วยเหลือราษฎรที่มีฐานะยากจน<br>
       4. เพื่อพัฒนาด้านการประมงและการเพาะเลี้ยงสัตว์น้ำชายฝั่งเพื่อเป็นการเพิ่มผลผลิตของประเทศ และเป็นพื้นฐานของการพัฒนาด้านการประมง ตลอดจน
