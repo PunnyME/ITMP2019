@@ -292,7 +292,7 @@
       background-position: center bottom;
       background-repeat: no-repeat;
       position: relative;
-      top: -31vw;
+      top: -17vw;
       z-index: 3;
     }
 
@@ -306,8 +306,9 @@
       background-size: contain;
       background-position: center bottom;
       background-repeat: no-repeat;
-      position: relative;
-      top: -59vw;
+      position: absolute;
+      /*top: 50vw;*/
+      bottom: 0;
       z-index: 3;
     }
 
@@ -367,7 +368,7 @@
       margin: 0;
       border: 0;
       padding: 0;
-      top: 117vw;
+      top: 137vw;
       left: 15vw;
       width: 15vw;
       height: 7vw;
@@ -384,7 +385,7 @@
       margin: 0;
       border: 0;
       padding: 0;
-      top: 125vw;
+      top: 145vw;
       left: 20vw;
       width: 15vw;
       height: 4vw;
@@ -401,7 +402,7 @@
       margin: 0;
       border: 0;
       padding: 0;
-      top: 113vw;
+      top: 133vw;
       left: 30vw;
       width: 15vw;
       height: 5vw;
@@ -418,7 +419,7 @@
       margin: 0;
       border: 0;
       padding: 0;
-      top: 119vw;
+      top: 139vw;
       left: 35vw;
       width: 15vw;
       height: 3vw;
@@ -435,7 +436,7 @@
       margin: 0;
       border: 0;
       padding: 0;
-      top: 130vw;
+      top: 150vw;
       left: 45vw;
       width: 15vw;
       height: 5vw;
@@ -635,7 +636,7 @@
         background-position: center bottom;
         background-repeat: no-repeat;
         position: relative;
-        top: -55vw;
+        top: -40vw;
         z-index: 3;
       }
 
@@ -695,7 +696,7 @@
         margin: 0;
         border: 0;
         padding: 0;
-        top: 277vw;
+        top: 297vw;
         left: 15vw;
         width: 20vw;
         height: 7vw;
@@ -712,7 +713,7 @@
         margin: 0;
         border: 0;
         padding: 0;
-        top: 273vw;
+        top: 293vw;
         left: 20vw;
         width: 20vw;
         height: 5vw;
@@ -729,7 +730,7 @@
         margin: 0;
         border: 0;
         padding: 0;
-        top: 272vw;
+        top: 292vw;
         left: 30vw;
         width: 20vw;
         height: 7vw;
@@ -746,7 +747,7 @@
         margin: 0;
         border: 0;
         padding: 0;
-        top: 277vw;
+        top: 297vw;
         left: 35vw;
         width: 15vw;
         height: 4vw;
@@ -763,7 +764,7 @@
         margin: 0;
         border: 0;
         padding: 0;
-        top: 283vw;
+        top: 303vw;
         left: 45vw;
         width: 15vw;
         height: 5vw;
@@ -885,6 +886,31 @@
           d0.classList.remove("d0");
         }
       }
+
+      function cloudePlay1(){
+        let y = window.pageYOffset;
+        console.log(y);
+        // f1.style.marginTop = `-${y}px`;
+        // f2.style.marginTop = `-${y*3}px`;
+        // f3.style.marginTop = `-${y*2}px`;
+        // f4.style.marginTop = `-${y*1.5}px`;
+        // f5.style.marginTop = `-${y*0.7}px`;
+
+        cloude1.style.marginTop = `-${y*0.015}vw`;
+        cloude2.style.marginTop = `-${y*0.02}vw`;
+        cloude3.style.marginTop = `-${y*0.01}vw`;
+        cloude4.style.marginTop = `-${y*0.01}vw`;
+        cloude5.style.marginTop = `-${y*0.015}vw`;
+        cloude6.style.marginTop = `-${y*0.005}vw`;
+        cloude7.style.marginTop = `-${y*0.01}vw`;
+        cloude8.style.marginTop = `-${y*0.015}vw`;
+
+        walking.style.marginTop = `-${y*0.007}vw`;
+        
+
+
+      }
+      window.addEventListener("scroll", cloudePlay1);
 
 
     </script>
