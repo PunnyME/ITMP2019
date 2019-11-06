@@ -15,14 +15,38 @@
 
     #d1 {
       width: 100%;
-      height: 145vw;
+      height: 70.5vw;
       position: relative;
       background-color: #F1A595;
-      z-index: 2;
+      z-index: 5;
+    }
+
+    #d2 {
+      width: 100%;
+      height: 129.5vw;
+      position: relative;
+      background-color: #0FB49E;
+      z-index: 4;
+    }
+
+    #d3 {
+      width: 100%;
+      height: 68.5vw;
+      position: relative;
+      background-color: #FFBA30;
+      z-index: 4;
+    }
+
+    #d4 {
+      width: 100%;
+      height: 525vw;
+      position: relative;
+      background-color: #0FB49E;
+      z-index: 3;
     }
 
     #navbar {
-      background-color: #f4f4f4;
+      /*background-color: #f4f4f4;*/
       position: fixed;
       display: flex;
       flex-flow: row wrap;
@@ -31,7 +55,7 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
-      z-index: 4;
+      z-index: 11;
     }
 
     .navigation nav {
@@ -39,8 +63,8 @@
       padding: 0;
       display: flex;
       justify-content: center;
-      background-color: #f4f4f4;
-      z-index: 6;
+      /*background-color: #f4f4f4;*/
+      z-index: 11;
     }
 
     ul {
@@ -67,11 +91,12 @@
     }
 
     a:hover {
-        color: #0FB49E;
+        color: #f4f4f4;
+        /*text-shadow: 0em 0.05em #0D4776;*/
     }
 
     .head {
-      background: #f4f4f4;
+      /*background: #f4f4f4;*/
       font-family: 'Prompt', sans-serif;
       margin: 0;
       border: 0;
@@ -89,7 +114,7 @@
     .navback{
       width: 0%;
       height: 5vw;
-      background: #f4f4f4;
+      /*background: #f4f4f4;*/
       z-index: 4;
       width: 100vw;
       position: fixed;
@@ -103,36 +128,556 @@
       z-index: 4;
     }
 
+    #island1 {
+      background-image: url('pic/index/island1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 27vw;
+      width: 55vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 7;
+      display: inline-block;
+      top: 6vw;
+    }
+
+    #island2 {
+      background-image: url('pic/index/island2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 5vw;
+      width: 17vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 7;
+      display: inline-block;
+      top: 16.5vw;
+      right: 0%;
+    }
+
+    #water1 {
+      background-image: url('pic/index/water1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 51vw;
+      width: 100%;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 6;
+      display: inline-block;
+      top: 19.5vw;
+    }
+
+    #bridge1 {
+      background-image: url('pic/index/bridge1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 18vw;
+      width: 18.5vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 8;
+      display: inline-block;
+      top: 21vw;
+    }
+
+    #ubridge1 {
+      background-image: url('pic/index/ubridge1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 70vw;
+      width: 7vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 7;
+      display: inline-block;
+      top: 33vw;
+      left: 10vw;
+    }
+
+    #water2 {
+      background-image: url('pic/index/water2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 47vw;
+      width: 67vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 7;
+      display: inline-block;
+      top: 40vw;
+      right: 0%;
+    }
+
+    #r9 {
+      background-image: url('pic/index/r9.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 35vw;
+      width: 35vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 85vw;
+      left: 45vw;
+      z-index: 7;
+      display: inline-block;
+    }
+
+    #tree1 {
+      background-image: url('pic/index/tree1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 102vw;
+      width: 100%;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 7;
+      display: inline-block;
+      top: 95vw;
+    }
+
+    #label {
+      background-image: url('pic/index/label.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 35vw;
+      width: 35vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 157vw;
+      left: 13vw;
+      z-index: 7;
+      display: inline-block;
+    }
+
+    #utree1 {
+      background-image: url('pic/index/utree1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 12vw;
+      width: 100%;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 7;
+      display: inline-block;
+      top: 189.5vw;
+    }
+
+    #center {
+      background-image: url('pic/index/center.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 43vw;
+      width: 71vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 37vw;
+      z-index: 7;
+      display: inline-block;
+    }
+
+    #tree2 {
+      background-image: url('pic/index/tree2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 102vw;
+      width: 70vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 7;
+      display: inline-block;
+      top: 2vw;
+      right: 0%;
+    }
+
+    #bridge2 {
+      background-image: url('pic/index/bridge2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 60vw;
+      width: 100%;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 6;
+      display: inline-block;
+      top: 79vw;
+    }
+
+    #water3 {
+      background-image: url('pic/index/water3.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 74vw;
+      width: 58vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 6;
+      display: inline-block;
+      top: 75vw;
+      opacity: 0.6;
+    }
+
+    #center2 {
+      background-image: url('pic/index/center2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 192vw;
+      width: 100%;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 6;
+      display: inline-block;
+      top: 130vw;
+    }
+
+    #people1 {
+      background-image: url('pic/index/people1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 54vw;
+      width: 33vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 6;
+      display: inline-block;
+      top: 202vw;
+      left: 48vw;
+    }
+
+    #water4 {
+      background-image: url('pic/index/water4.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 51vw;
+      width: 50vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 7;
+      display: inline-block;
+      top: 280vw;
+      right: 0%;
+      opacity: 0.6;
+    }
+
+    #bridge3 {
+      background-image: url('pic/index/bridge3.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 232vw;
+      width: 80vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 6;
+      display: inline-block;
+      top: 323vw;
+    }
+
+    #people2 {
+      background-image: url('pic/index/people2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 58vw;
+      width: 72vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 6;
+      display: inline-block;
+      top: 383vw;
+      left: 2vw;
+    }
+
+    #water5 {
+      background-image: url('pic/index/water4.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 51vw;
+      width: 50vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 5;
+      display: inline-block;
+      top: 441vw;
+      right: 0%;
+      opacity: 0.6;
+    }
+
+    #fishb {
+      background-image: url('pic/index/fishb.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 90vw;
+      width: 100%;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: 0;
+      z-index: 7;
+    }
+
+    .name {
+      font-family: 'Prompt', sans-serif;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      font-size: 2.5vw;
+      position: absolute;
+      color: #f4f4f4;
+      text-align: center;
+      justify-content: center;
+      top: 4vw;
+      left: 22vw;
+      width: 50vw;
+      z-index: 6;
+      display: inline-block;
+    }
+
+    .n1 {
+      font-size: 2.6vw;
+      top: 22.5vw;
+      left: 26vw;
+    }
+
+    .n2 {
+      font-size: 4.8vw;
+      top: 24.4vw;
+      left: 26vw;
+    }
+
+    .n3 {
+      font-size: 2.7vw;
+      top: 30vw;
+      left: 26vw;
+    }
+
     @media only screen and (max-width: 1024px) {
 
-      #d1 {
+      #d2 {
+        height: 146.5vw;
+      }
+
+      #d4 {
+        height: 510vw;
+      }
+
+      #navbar {
+        height: 0%;
+      }
+
+      #island1 {
+        height: 39vw;
+        width: 80vw;
+        top: 6vw;
+      }
+
+      #island2 {
+        height: 0vw;
+      }
+
+      #water1 {
+        top: 26.5vw;
+      }
+
+      #bridge1 {
+        height: 25vw;
+        width: 26.5vw;
+        top: 29vw;
+      }
+
+      #ubridge1 {
+        height: 80vw;
+        width: 11vw;
+        top: 45vw;
+        left: 13vw;
+      }
+
+      #water2 {
+        height: 40vw;
+        width: 57vw;
+        top: 55vw;
+        right: 0%;
+      }
+
+      #r9 {
+        height: 40vw;
+        width: 40vw;
+        top: 95vw;
+        left: 45vw;
+      }
+
+      #tree1 {
+        height: 102vw;
         width: 100%;
-        height: 300vw;
-        position: relative;
-        background-color: #F1A595;
-        z-index: 2;
+        top: 116vw;
       }
 
-      .navigation nav {
-        position: absolute;
-        z-index: 0;
+      #label {
+        height: 45vw;
+        width: 45vw;
+        top: 164vw;
+        left: 12vw;
       }
 
-      .head {
-        background: #f4f4f4;
-        font-family: 'Prompt', sans-serif;
-        margin: 0;
-        border: 0;
-        padding: 0;
-        font-size: 3vw;
-        display: block;
-        position: fixed;
-        color: #0D4776;
-        text-align: center;
-        justify-content: center;
-        width: 100vw;
-        height: 18vw;
-        z-index: 4;
+      #utree1 {
+        height: 12vw;
+        width: 100%;
+        top: 206.5vw;
+      }
+
+      #center {
+        height: 43vw;
+        width: 71vw;
+        top: 37vw;
+      }
+
+      #tree2 {
+        background-image: url('pic/index/tree2_m.png');
+        height: 100vw;
+        width: 64vw;
+        top: 13vw;
+        right: 0%;
+      }
+
+      #bridge2 {
+        height: 60vw;
+        width: 100%;
+        top: 91vw;
+      }
+
+      #water3 {
+        height: 74vw;
+        width: 58vw;
+        top: 128vw;
+        opacity: 0.6;
+      }
+
+      #center2 {
+        background-image: url('pic/index/center2_m.png');
+        height: 252vw;
+        width: 100%;
+        top: 109vw;
+        z-index: 7;
+      }
+
+      #people1 {
+        height: 86vw;
+        width: 50vw;
+        top: 212vw;
+        left: 27vw;
+        z-index: 7;
+
+      }
+
+      #water4 {
+        height: 51vw;
+        width: 50vw;
+        top: 310vw;
+        right: 0%;
+        opacity: 0.6;
+      }
+
+      #bridge3 {
+        height: 232vw;
+        width: 80vw;
+        top: 298vw;
+      }
+
+      #people2 {
+        height: 58vw;
+        width: 72vw;
+        top: 345vw;
+        left: 2vw;
+      }
+
+      #water5 {
+        height: 51vw;
+        width: 50vw;
+        top: 419vw;
+        right: 0%;
+        opacity: 0.6;
+      }
+
+      .name {
+        width: 60vw;
+      }
+
+      .n1 {
+        font-size: 5vw;
+        top: 30.5vw;
+        left: 33vw;
+      }
+
+      .n2 {
+        font-size: 8.8vw;
+        top: 34.4vw;
+        left: 33vw;
+      }
+
+      .n3 {
+        font-size: 5vw;
+        top: 44.8vw;
+        left: 33vw;
       }
 
     }
@@ -149,14 +694,46 @@
                 <li><a href="about.html">ประวัติ</a></li>
                 <li><a href="#about">สถานที่ท่องเที่ยว</a></li>
                 <li><a href="#contact">ผลงาน</a></li>
-                <li><a href="#about">โครงงานและ<br>งานกิจกรรม</a></li>
+                <li><a href="#about">โครงงานและงานกิจกรรม</a></li>
                 <li><a href="#about">ติดต่อ</a></li>
             </ul>
         </nav>
     </header>
     <div id="d1">
-
+      <div id="island1"></div>
+      <div id="island2"></div>
+      <div id="water1"></div>
+      <div id="bridge1"></div>
+      <div id="ubridge1"></div>
+      <div id="water2"></div>
+      <div id="r9"></div>
+      <h1 class="name n1">ศูนย์ศึกษาการพัฒนา</h1>
+      <h1 class="name n2">อ่าวคุ้งกระเบน</h1>
+      <h1 class="name n3">อันเนื่องมาจากพระราชดำริ</h1>
+      <div id="tree1"></div>
+      <div id="label"></div>
+      <div id="utree1"></div>
     </div>
+
+    <div id="d2"></div>
+
+    <div id="d3">
+      <div id="center"></div>
+      <div id="tree2"></div>
+      <div id="water3"></div>
+      <div id="bridge2"></div>
+      <div id="center2"></div>
+      <div id="people1"></div>
+      <div id="bridge3"></div>
+      <div id="people2"></div>
+      <div id="water4"></div>
+      <div id="water5"></div>
+    </div>
+
+    <div id="d4">
+      <div id="fishb"></div>
+    </div>
+
 
     <script type="text/javascript">
       
