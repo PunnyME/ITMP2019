@@ -45,6 +45,19 @@
       z-index: 3;
     }
 
+    .bar {
+      z-index: 0;
+      height: 0%;
+    }
+
+    .fa-bars {
+      color: #0D4776;
+      position: absolute;
+      z-index: 6;
+      width: 4vw;
+      font-size: 0vw;
+    }
+
     #navbar {
       /*background-color: #f4f4f4;*/
       position: fixed;
@@ -682,6 +695,27 @@
         height: 510vw;
       }
 
+      .bar {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 18vw;
+        z-index: 10;
+      }
+
+      .fa-bars {
+        color: #f4f4f4;
+        position: fixed;
+        display: flex;
+        text-align: center;
+        vertical-align: middle;
+        align-items: flex-end;
+        z-index: 7;
+        padding: 5.3vw 7.5vw;
+        width: 7vw;
+        font-size: 7.5vw;
+      }
+
       #navbar {
         height: 0%;
       }
@@ -871,7 +905,7 @@
 
       .t1 {
         font-size: 5vw;
-        top: 68.8vw;
+        top: 69.8vw;
         left: 29vw;
         width: 30vw;
       }
@@ -945,6 +979,11 @@
 </head>
 <body>
 
+  <div class="bar">
+    <div id="bb"></div>
+    <i class="fas fa-bars"></i>
+  </div>
+
       <header class="navigation">
         <nav>
           <div id="navback" class="navback"></div>
@@ -954,7 +993,7 @@
                 <li><a href="#about">สถานที่ท่องเที่ยว</a></li>
                 <li><a href="#contact">ผลงาน</a></li>
                 <li><a href="#about">โครงงานและงานกิจกรรม</a></li>
-                <li><a href="#about">ติดต่อ</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
             </ul>
         </nav>
     </header>

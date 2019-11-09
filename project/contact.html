@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบนอันเนื่องมาจากพระราชดำริ</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Trirong&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Prompt:700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8bb0907cde.js" crossorigin="anonymous"></script>
+  <style type="text/css">
+
+    body {
+      margin:0;
+      background-color: #fcfbf9;
+    }
+
+    .navigation nav {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;  
+      background-color: #f4f4f4;
+      z-index: 6;
+    }
+
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      z-index: 3;
+    }
+
+    li a {
+        font-family: 'Prompt', sans-serif;
+        height: 3vw;
+        display: block;
+        color: #0D4776;
+        font-size: 1vw;
+        text-align: center;
+        padding: 1vw 2.5vw;
+        text-decoration: none;
+        z-index: 5;
+        transition: all 0.4s;
+    }
+
+    a:hover {
+        color: #0FB49E;
+    }
+
+    .head {
+      background: #f4f4f4;
+      font-family: 'Prompt', sans-serif;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      font-size: 1vw;
+      display: inline-block;
+      position: relative;
+      color: #0D4776;
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+      z-index: 4;
+    }
+
+    .navback{
+      width: 0%;
+      height: 5vw;
+      background: #f4f4f4;
+      z-index: 4;
+    }
+
+    .d0{
+      width: 100%;
+      height: 4vw;
+      background-color: #fcfbf9;
+      z-index: 1;
+    }
+
+    .arrow {
+      z-index: 0;
+      height: 0%;
+    }
+
+    .fa-chevron-left {
+      color: #0D4776;
+      position: absolute;
+      z-index: 6;
+      width: 4vw;
+      font-size: 0vw;
+    }
+
+    #click {
+      background-image: url('pic/about/blank.png');
+      height: 16.6vh;
+      width: 20vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      transform: scale(0);
+      -webkit-text-security: none;
+      z-index: 7;
+    }
+
+    .sticky {
+      background-color: #f4f4f4;
+      position: fixed;
+      display: flex;
+      flex-flow: row wrap;
+      list-style-type: none;
+      top:0;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      z-index: 4;
+    }
+
+    .stickyBack {
+      width: 100vw;
+      position: fixed;
+      display: flex;
+      flex-flow: row wrap;
+      list-style-type: none;
+      top:0;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      z-index: 4;
+    }
+
+    .topic {
+      font-family: 'Prompt', sans-serif;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      position: relative;
+      color: #0D4776;
+      text-align: center;
+      justify-content: center;
+      width: 40vw;
+      z-index: 3;
+      display: inline-block;
+    }
+
+    .t1 {
+      font-size: 3vw;
+      top: 5vw;
+      left: 29.5vw;
+    }
+
+    .t2 {
+      text-align: left;
+      font-size: 1.6vw;
+      color: #f4f4f4;
+      width: 42vw;
+      top: 5vw;
+      left: 30vw;
+    }
+
+    #map {
+      background-image: url('pic/contact/map.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 93vw;
+      width: 100%;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: relative;
+      z-index: 3;
+      top: 10vw;
+    }
+
+    #contact {
+      width: 100%;
+      height: 15vw;
+      position: relative;
+      background-color: #0D4776;
+      z-index: 3;
+    }
+
+    #location {
+      background-image: url('pic/contact/location.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 5vw;
+      width: 5vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 7;
+      display: inline-block;
+      top: 5vw;
+      left: 24vw;
+    }
+
+    @media only screen and (max-width: 1024px) {
+
+      .navigation nav {
+        position: absolute;
+        z-index: 0;
+      }
+
+      #d0 {
+        position: absolute;
+        z-index: 0;
+      }
+
+      .arrow {
+        display: table;
+        position: fixed;
+        width: 100%;
+        height: 18vw;
+        z-index: 7;
+      }
+
+      .fa-chevron-left {
+        color: #0D4776;
+        position: fixed;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        z-index: 6;
+        padding: 5.3vw 7.5vw;
+        width: 4vw;
+        font-size: 7.5vw;
+      }
+
+      #click {
+        background-image: url('pic/about/blank.png');
+        height: 18vw;
+        width: 20vw;
+        background-size: contain;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        position: absolute;
+        transform: scale(1);
+        -webkit-text-security: none;
+        z-index: 7;
+      }
+
+      .head {
+        background: #f4f4f4;
+        font-family: 'Prompt', sans-serif;
+        margin: 0;
+        border: 0;
+        padding: 0;
+        font-size: 3vw;
+        display: block;
+        position: fixed;
+        color: #0D4776;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        height: 18vw;
+        z-index: 4;
+      }
+
+      .t1 {
+        font-size: 4.5vw;
+        top: 22vw;
+        left: 29.5vw;
+      }
+
+      .t2 {
+        font-size: 2.5vw;
+        width: 65vw;
+        top: 7vw;
+        left: 23vw;
+      }
+
+      #map {
+        position: absolute;
+        top: 33vw;
+      }
+
+      #contact {
+        height: 23vw;
+        position: absolute;
+        bottom: 0%;
+      }
+
+      #location {
+        height: 10vw;
+        width: 10vw;
+        top: 6vw;
+        left: 11vw;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="arrow">
+      <a id="click" href="index.html"></a>
+      <i class="fas fa-chevron-left"></i>
+  </div>  
+
+    <div class="head">
+      <b><br>ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบน<br>อันเนื่องมาจากพระราชดำริ<br><br></b>
+    </div>
+  
+
+      <header class="navigation">
+        <nav>
+          <div id="navback" class="navback"></div>
+            <ul id="navbar">
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="about.html">ประวัติ</a></li>
+                <li><a href="#about">สถานที่ท่องเที่ยว</a></li>
+                <li><a href="#contact">ผลงาน</a></li>
+                <li><a href="#about">โครงงานและ<br>งานกิจกรรม</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="d0" class=""></div>
+    <h1 class="topic t1">ติดต่อ</h1>
+    <div id="map"></div>
+    <div id="contact">
+      <div id="location"></div>
+      <h1 class="topic t2">ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบนอันเนื่องมาจากพระราชดำริ<br>อำเภอท่าใหม่ จังหวัดจันทร์บุรี</h1>
+    </div>
+    
+
+    <script type="text/javascript">
+      
+      window.onscroll = function() {myFunction()};
+
+      var navbar = document.getElementById("navbar");
+      var navback = document.getElementById("navback");
+      var d0 = document.getElementById("d0");
+
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+          navback.classList.add("stickyBack");
+          d0.classList.add("d0");
+        } else {
+          navbar.classList.remove("sticky");
+          navback.classList.remove("stickyBack");
+          d0.classList.remove("d0");
+        }
+      }
+
+
+    </script>
+
+</body>
+</html>
