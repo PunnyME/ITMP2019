@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบนอันเนื่องมาจากพระราชดำริ</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Trirong&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Prompt:700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8bb0907cde.js" crossorigin="anonymous"></script>
+  <style type="text/css">
+    body {
+      margin:0;
+      /*background-color: #32B6BD;*/
+    }
+
+    #d1 {
+      width: 100%;
+      height: 145vw;
+      position: relative;
+      background-color: #F1A595;
+      z-index: 2;
+    }
+
+    #d2 {
+      width: 100%;
+      height: 140vw;
+      position: relative;
+      background-color: #32B6BD;
+      z-index: 3;
+    }
+
+    .navigation nav {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;  
+      background-color: #f4f4f4;
+      z-index: 6;
+    }
+
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      z-index: 3;
+    }
+
+    li a {
+        font-family: 'Prompt', sans-serif;
+        height: 3vw;
+        display: block;
+        color: #0D4776;
+        font-size: 1vw;
+        text-align: center;
+        padding: 1vw 2.5vw;
+        text-decoration: none;
+        z-index: 5;
+        transition: all 0.4s;
+    }
+
+    a:hover {
+        color: #0FB49E;
+    }
+
+    .head {
+      background: #f4f4f4;
+      font-family: 'Prompt', sans-serif;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      font-size: 1vw;
+      display: inline-block;
+      position: relative;
+      color: #0D4776;
+      text-align: center;
+      justify-content: center;
+      width: 100vw;
+      z-index: 4;
+    }
+
+    .navback{
+      width: 0%;
+      height: 5vw;
+      background: #f4f4f4;
+      z-index: 4;
+    }
+
+    .d0{
+      width: 100vw;
+      height: 4vw;
+      background-color: #F1A595;
+      z-index: 1;
+    }
+
+    .arrow {
+      z-index: 0;
+      height: 0%;
+    }
+
+    .fa-chevron-left {
+      color: #0D4776;
+      position: absolute;
+      z-index: 6;
+      width: 4vw;
+      font-size: 0vw;
+    }
+
+    #click {
+      background-image: url('pic/about/blank.png');
+      height: 16.6vh;
+      width: 20vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      transform: scale(0);
+      -webkit-text-security: none;
+      z-index: 7;
+    }
+
+    .sticky {
+      background-color: #f4f4f4;
+      position: fixed;
+      display: flex;
+      flex-flow: row wrap;
+      list-style-type: none;
+      top:0;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      z-index: 4;
+    }
+
+    .stickyBack {
+      width: 100vw;
+      position: fixed;
+      display: flex;
+      flex-flow: row wrap;
+      list-style-type: none;
+      top:0;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      z-index: 4;
+    }
+
+#d0{
+      width: 100vw;
+      height: 5vw;
+      background-color: #F1A595;
+      z-index: 1;
+    }
+#d1 {
+    width: 100vw;
+    height: 69vw;
+    position: relative;
+    background-color: #FFBA30;
+    z-index: 1;
+}
+#d2 {
+    width: 100vw;
+    height: 185vw;
+    position: relative;
+    background-color: #36cccc;
+    z-index: 3;
+}
+#cloude1 {
+      background-image: url('pic/work/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 2vw;
+      left: 22vw;
+      width: 12vw;
+      height: 2vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 3;
+      -webkit-animation: cloudemove1 70s infinite;
+    }
+
+    #cloude2 {
+      background-image: url('pic/work/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 2.5vw;
+      left: 22vw;
+      width: 12vw;
+      height: 4vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 3;
+      -webkit-animation: cloudemove2 60s infinite;
+    }
+
+    #cloude3 {
+      background-image: url('pic/work/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 3vw;
+      left: 60vw;
+      width: 12vw;
+      height: 5vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      -webkit-animation: cloudemove3 50s infinite;
+    }
+
+    #cloude4 {
+      background-image: url('pic/work/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 10vw;
+      left: 20vw;
+      width: 15vw;
+      height: 3.5vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      -webkit-animation: cloudemove4 40s infinite;
+    }
+
+    #bg1 {
+      background-image: url('pic/work/mount.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 100vw;
+      width: 100%;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: relative;
+      top: -30vw;
+      z-index: 2;
+    }
+
+    .fish {
+      position: absolute;
+  
+      transition: all .2s}
+    .bluf1 {
+      background-image: url('pic/work/bluf1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 7vw;
+      width: 7vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      top: 400vw;
+      left: 6vw;
+      z-index: 3;
+     
+    }
+    .nemo1 {
+      background-image: url('pic/work/nemo1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 7vw;
+      width: 7vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      top: 400vw;
+      left: 75vw;
+      z-index: 3;
+      
+    }
+    .bluf2 {
+      background-image: url('pic/work/bluf2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 7vw;
+      width: 7vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      top: 400vw;
+      left: 40vw;
+      z-index: 3;
+      
+    }
+    .bluf3 {
+      background-image: url('pic/work/bluf3.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 10vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 400vw;
+      left: 40vw;
+      z-index: 3;
+   
+    }
+
+    #ic1 {
+      background-image: url('pic/work/ic1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 50vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position:absolute;
+      top: 40vw;
+      left: 0vw;
+      z-index: 3;
+      display: inline-block;
+
+    }
+
+    #ic2 {
+      background-image: url('pic/work/ic2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 50vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 40vw;
+      left: 20vw;
+      z-index: 3;
+      display: inline-block;
+    }
+
+    #ic3 {
+      background-image: url('pic/work/ic3.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 50vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 40vw;
+      left: 40vw;
+      z-index: 3;
+      display: inline-block;
+    }
+    #ic4 {
+      background-image: url('pic/work/ic3.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 50vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 60vw;
+      left: 8vw;
+      z-index: 3;
+      display: inline-block;
+    }
+    #ic5 {
+      background-image: url('pic/work/ic5.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 50vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 60vw;
+      left: 30vw;
+      z-index: 3;
+      display: inline-block;
+    }
+    #ic6 {
+      background-image: url('pic/work/ic6.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 50vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 100vw;
+      left: 6vw;
+      z-index: 3;
+      display: inline-block;
+    }
+    #ic7 {
+      background-image: url('pic/work/ic7.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 50vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 100vw;
+      left: 26vw;
+      z-index: 3;
+      display: inline-block;
+    }
+    #ic8 {
+      background-image: url('pic/work/ic8.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 50vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 120vw;
+      left: 6vw;
+      z-index: 3;
+      display: inline-block;
+    }
+    #ic9 {
+      background-image: url('pic/work/ic9.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 50vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 120vw;
+      left: 26vw;
+      z-index: 3;
+      display: inline-block;
+    }
+
+    #work_1 {
+      font-family: 'Prompt', sans-serif;
+      margin: 0;
+      border: 1;
+      padding: 0;
+      font-size: 2.5vw;
+      position: relative;
+      color: #0D4776;
+      text-align: center;
+      justify-content: center;
+      top: 4vw;
+      left: 22vw;
+      width: 20vw;
+      z-index: 6;
+      display: inline-block;
+    }
+    .topic {
+      font-family: 'Prompt', sans-serif;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      position: relative;
+      color: #0D4776;
+      text-align: left;
+      justify-content: center;
+      width: 65vw;
+      z-index: 6;
+      display: inline-block;
+    }
+
+    .t1 {
+      font-size: 1.6vw;
+      top: 15vw;
+      left: 20vw;
+    }
+    .t2 {
+      font-size: 1.6vw;
+      top: 70vw;
+      left: 20vw;
+    }
+    .pg {
+      font-family: 'Mitr', sans-serif;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      position: relative;
+      color: #0D4776;
+      text-align: left;
+      justify-content: center;
+      width: 52vw;
+      z-index: 6;
+      display: inline-block;
+    }
+
+    .p1 {
+      font-size: 1.3vw;
+      top: 16vw;
+      left: 20vw;
+    }
+    .p2 {
+      font-size: 1.3vw;
+      top: 72vw;
+      left: 20vw;
+    }
+    .list1 {
+      font-family: 'Prompt', sans-serif;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      position: absolute;
+      color: #0D4776;
+      text-align: center;
+      justify-content: center;
+      width: 52vw;
+      z-index: 10;
+      display: inline-block;
+    }
+
+    .li1 {
+      font-size: 1.4vw;
+      top: 52vw;
+      left: 0vw;
+    }
+    .li2 {
+      font-size: 1.4vw;
+      top: 52vw;
+      left: 19vw;
+    }
+    .li3 {
+      font-size: 1.4vw;
+      top: 52vw;
+      left: 39vw;
+    }
+    .li4 {
+      font-size: 1.4vw;
+      top: 72vw;
+      left: 7vw;
+    }
+    .li5 {
+      font-size: 1.4vw;
+      top: 72vw;
+      left: 30vw;
+    }
+    .li6 {
+      font-size: 1.4vw;
+      top: 112vw;
+      left: 6vw;
+    }
+    .li7 {
+      font-size: 1.4vw;
+      top: 112vw;
+      left: 25vw;
+    }
+    .li8 {
+      font-size: 1.4vw;
+      top: 132vw;
+      left: 6vw;
+    }
+    .li9 {
+      font-size: 1.4vw;
+      top: 132vw;
+      left: 25vw;
+    }
+
+    #coral {
+      background-image: url('pic/work/coral.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 90vw;
+      width: 100%;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      /*top: 50vw;*/
+      bottom: 0;
+      z-index: 3;
+    }
+@-webkit-keyframes cloudemove1 {
+      from {left: 10vw;}
+      to {left: 48vw;}
+    }
+
+    @-webkit-keyframes cloudemove2 {
+      from {left: 25vw;}
+      to {left: 71vw;}
+    }
+
+    @-webkit-keyframes cloudemove3 {
+      from {left: 39vw;}
+      to {left: 79vw;}
+    }
+
+    @-webkit-keyframes cloudemove4 {
+      from {left: 40vw;}
+      to {left: 75vw;}
+    }
+    /*@-webkit-keyframes bluf1 {
+      from {left: 6vw;}
+      to {left: 75vw;}
+    }
+    @-webkit-keyframes nemo1 {
+      from {left: 65vw;}
+      to {left: 6vw;}
+    }
+    @-webkit-keyframes bluf2 {
+      from {left: 0vw;}
+      to {left: 20vw;}
+    }*/
+@media only screen and (max-width: 1024px) {
+
+    #d1 {
+        width: 100%;
+        height: 160vw;
+        position: relative;
+        background-color: #FFBA30;
+        z-index: 2;
+        }
+    #d2 {
+        width: 100%;
+        height: 300vw;
+        position: relative;
+        background-color: #36cccc;
+        z-index: 3;
+      }
+       #work_1  {
+        font-family: 'Prompt', sans-serif;
+        margin: 0;
+        border: 0;
+        padding: 0;
+        font-size: 4.5vw;
+        position: relative;
+        color: #0D4776;
+        text-align: center;
+        justify-content: center;
+        top: 5vw;
+        left: 20vw;
+        width: 65vw;
+        z-index: 6;
+      }
+
+      .navigation nav {
+        position: absolute;
+        z-index: 0;
+      }
+
+      #d0 {
+        position: absolute;
+        z-index: 0;
+      }
+
+      .arrow {
+        display: table;
+        position: fixed;
+        width: 100%;
+        height: 18vw;
+        z-index: 7;
+      }
+
+      .fa-chevron-left {
+        color: #0D4776;
+        position: fixed;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        z-index: 6;
+        padding: 5.3vw 7.5vw;
+        width: 4vw;
+        font-size: 7.5vw;
+      }
+
+      #click {
+        background-image: url('pic/about/blank.png');
+        height: 18vw;
+        width: 20vw;
+        background-size: contain;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        position: absolute;
+        transform: scale(1);
+        -webkit-text-security: none;
+        z-index: 7;
+      }
+
+      .head {
+        background: #f4f4f4;
+        font-family: 'Prompt', sans-serif;
+        margin: 0;
+        border: 0;
+        padding: 0;
+        font-size: 3vw;
+        display: block;
+        position: fixed;
+        color: #0D4776;
+        text-align: center;
+        justify-content: center;
+        width: 100vw;
+        height: 18vw;
+        z-index: 4;
+      }
+      #cloude1 {
+      background-image: url('pic/work/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 86vw;
+      left: 22vw;
+      width: 18vw;
+      height: 18vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      -webkit-animation: cloudemove1 70s infinite;
+    }
+
+    #cloude2 {
+      background-image: url('pic/work/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 89vw;
+      left: 22vw;
+      width: 20vw;
+      height: 20vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      -webkit-animation: cloudemove2 60s infinite;
+    }
+
+    #cloude3 {
+      background-image: url('pic/work/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 90vw;
+      left: 60vw;
+      width: 20vw;
+      height: 25vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      -webkit-animation: cloudemove3 50s infinite;
+    }
+
+    #cloude4 {
+      background-image: url('pic/work/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 85vw;
+      left: 20vw;
+      width: 18vw;
+      height: 18vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      -webkit-animation: cloudemove4 30s infinite;
+    }
+
+      .t1 {
+        font-size: 3vw;
+        top: 20vw;
+        left: 20vw;
+        width: 65vw;
+      }
+
+      .t2 {
+        font-size: 3vw;
+        top: 120vw;
+        left: 20vw;
+      }
+
+      .p1 {
+        font-size: 2.5vw;
+        top: 20vw;
+        left: 21vw;
+        width: 60vw
+      }
+
+      .p2 {
+        font-size: 2.5vw;
+        top: 120vw;
+        left: 21vw;
+        width: 60vw;
+      }
+      .li1 {
+      font-size: 1.4vw;
+      top: 92vw;
+      left: 0vw;
+    }
+    .li2 {
+      font-size: 1.4vw;
+      top: 92vw;
+      left: 19vw;
+    }
+    .li3 {
+      font-size: 1.4vw;
+      top: 92vw;
+      left: 39vw;
+    }
+    .li4 {
+      font-size: 1.4vw;
+      top: 112vw;
+      left: 7vw;
+    }
+    .li5 {
+      font-size: 1.4vw;
+      top: 112vw;
+      left: 30vw;
+    }
+    .li6 {
+      font-size: 1.4vw;
+      top: 192vw;
+      left: 6vw;
+    }
+    .li7 {
+      font-size: 1.4vw;
+      top: 192vw;
+      left: 25vw;
+    }
+    .li8 {
+      font-size: 1.4vw;
+      top: 212vw;
+      left: 6vw;
+    }
+    .li9 {
+      font-size: 1.4vw;
+      top: 212vw;
+      left: 25vw;
+    }
+
+      #ic1 {
+      background-image: url('pic/work/ic1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 50vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position:absolute;
+      top: 80vw;
+      left: 0vw;
+      z-index: 3;
+      display: inline-block;
+
+    }
+
+    #ic2 {
+      background-image: url('pic/work/ic2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 50vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 80vw;
+      left: 20vw;
+      z-index: 3;
+      display: inline-block;
+    }
+
+    #ic3 {
+      background-image: url('pic/work/ic3.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 50vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 80vw;
+      left: 40vw;
+      z-index: 3;
+      display: inline-block;
+    }
+    #ic4 {
+      background-image: url('pic/work/ic3.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 50vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 100vw;
+      left: 8vw;
+      z-index: 3;
+      display: inline-block;
+    }
+    #ic5 {
+      background-image: url('pic/work/ic5.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 50vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 100vw;
+      left: 30vw;
+      z-index: 3;
+      display: inline-block;
+    }
+    #ic6 {
+      background-image: url('pic/work/ic6.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 50vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 180vw;
+      left: 6vw;
+      z-index: 3;
+      display: inline-block;
+    }
+    #ic7 {
+      background-image: url('pic/work/ic7.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 50vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 180vw;
+      left: 26vw;
+      z-index: 3;
+      display: inline-block;
+    }
+    #ic8 {
+      background-image: url('pic/work/ic8.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 50vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 200vw;
+      left: 6vw;
+      z-index: 3;
+      display: inline-block;
+    }
+    #ic9 {
+      background-image: url('pic/work/ic9.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 50vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 200vw;
+      left: 26vw;
+      z-index: 3;
+      display: inline-block;
+    }
+      #bg1 {
+      background-image: url('pic/work/mount.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 100vw;
+      width: 100vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: relative;
+      top: 60vw;
+      z-index: 2;
+    }
+      #coral {
+      background-image: url('pic/work/coral.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 90vw;
+      width: 100%;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      /*top: 50vw;*/
+      bottom: 0;
+      z-index: 3;
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="arrow">
+      <a id="click" href="index.html"></a>
+      <i class="fas fa-chevron-left"></i>
+    </div>   
+
+   <div class="head">
+      <b><br>ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบน<br>อันเนื่องมาจากพระราชดำริ<br><br></b>
+    </div>
+  
+
+      <div id="d0" class=""><header class="navigation">
+        <nav>
+          <div id="navback" class="navback"></div>
+            <ul id="navbar">
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="about.html">ประวัติ</a></li>
+                <li><a href="travel.html">สถานที่ท่องเที่ยว</a></li>
+                <li><a href="work.html">ผลงาน</a></li>
+                <li><a href="pro.html">โครงงานและงานกิจกรรม</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+    <div id="d1">
+      <div id="cloude1"></div>
+      <div id="cloude2"></div>
+      <div id="cloude3"></div>
+      <div id="cloude4"></div>
+      <div id="bg1"></div>>
+    </div>
+    <div id="d2">
+      <div id="b1" class="fish bluf1"></div>
+      <div id="n1" class="fish nemo1"></div>
+      <div id="b2" class="fish bluf2"></div>
+      <div id="b3" class="fish bluf3"></div>
+      <h1 id="work_1">ผลงาน</h1>
+      
+      <div><h1 class="topic t1">การอนุรักษณ์ทรัพยากรธรรมชาติท้องทะเล</h1></div>
+      <p class='pg p1'>ในอดีตทรัพยากรธรรมชาตินริเวณชายฝั่งทะเลขอศูนย์ศึกษามีสภาพเสื่อมโทรมจากการทำ<br>ประมงผิดวิธีโดยเฉพาะมีการจับสัตว์น้ำเย็นเกินกำลังการผลิตของธรรมชาติจึงได้ร่วมกับภาค<br>ประชาชนฟื้นฟูธรรมชาติและส่งเสริมการประมงให้ถูกวิธี มีดังนี้</p>
+        <div id="list1">
+      <div id="ic1"></div>
+      <div  id="ic2"></div>
+      <div id="ic3"></div>
+      <p class="list1 li1">การอนุรักษณ์ปะการัง</p>
+      <p class="list1 li2">การอนุรักษณ์หญ้าทะเล</p>
+      <p class="list1 li3">ปะการังเทียม</p></div>
+      <div id="list2">
+      <div id="ic4"></div>
+      <div  id="ic5"></div>
+      <p class="list1 li4">ปล่อยพันธุ์สัตว์น้ำ</p>
+      <p class="list1 li5">ปรับเปลี่ยนเครื่องมือ<br>ทำประมง</p>
+      <h1 class="topic t2">การอนุรักษณ์ป่าชายเลน</h1></div>
+      <p class='pg p2'>ป่าชายเลนรอบอ่าวคุ้งกระเบนได้ถูกทำลายจนเสื่อมโทรมเนื่องจากการตัดไม้ทำถ่าน<br>และนำดินมาใช้เลี้ยงสัตว์น้ำจึงได้ทำการอนุรักษณ์และฟื้นฟูป่าชายเลน มีดังนี้</p>
+      <div id="ic6"></div>
+      <div  id="ic7"></div>
+      <div id="ic8"></div>
+      <div id="ic9"></div>
+      <p class="list1 li6">ฟื้นฟูป่า</p>
+      <p class="list1 li7">วิจัย</p>
+      <p class="list1 li8">สร้างกลุ่ม<br>อนุรักษณ์ท้องถิ่น</p>
+      <p class="list1 li9">สร้างจิตสำนึก</p>
+      
+      <div id="coral"></div>
+      
+    </div>
+    <script type="text/javascript">
+      
+      window.onscroll = function() {myFunction()};
+
+      var navbar = document.getElementById("navbar");
+      var navback = document.getElementById("navback");
+      var d0 = document.getElementById("d0");
+
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+          navback.classList.add("stickyBack");
+          d0.classList.add("d0");
+        } else {
+          navbar.classList.remove("sticky");
+          navback.classList.remove("stickyBack");
+          d0.classList.remove("d0");
+        }
+      }
+    function fishtank() {
+      let y = window.pageYOffset - d2.offsetTop + d2.offsetHeight;
+      console.log(y);
+      b1.style.marginTop = `-${y*2}px`;
+      n1.style.marginTop = `-${y*1.6}px`;
+      b2.style.marginTop = `-${y*1.75}px`;
+      b3.style.marginTop = `-${y*1.5}px`;
+      /*f5.style.marginTop = `-${y*0.7}px`;*/
+    }
+    window.addEventListener("scroll", fishtank);
+
+    </script>
+
+</body>
+</html>

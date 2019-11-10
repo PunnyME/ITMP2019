@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบนอันเนื่องมาจากพระราชดำริ</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Trirong&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Prompt:700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8bb0907cde.js" crossorigin="anonymous"></script>
+  <style type="text/css">
+   body {
+      margin:0;
+      /*background-color: #32B6BD;*/
+    }
+
+    #d1 {
+      width: 100%;
+      height: 145vw;
+      position: relative;
+      background-color: #F1A595;
+      z-index: 2;
+    }
+
+    #d2 {
+      width: 100%;
+      height: 140vw;
+      position: relative;
+      background-color: #32B6BD;
+      z-index: 3;
+    }
+
+    .navigation nav {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;  
+      background-color: #f4f4f4;
+      z-index: 6;
+    }
+
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      z-index: 3;
+    }
+
+    li a {
+        font-family: 'Prompt', sans-serif;
+        height: 3vw;
+        display: block;
+        color: #0D4776;
+        font-size: 1vw;
+        text-align: center;
+        padding: 1vw 2.5vw;
+        text-decoration: none;
+        z-index: 5;
+        transition: all 0.4s;
+    }
+
+    a:hover {
+        color: #0FB49E;
+    }
+
+    .head {
+      background: #f4f4f4;
+      font-family: 'Prompt', sans-serif;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      font-size: 1vw;
+      display: inline-block;
+      position: relative;
+      color: #0D4776;
+      text-align: center;
+      justify-content: center;
+      width: 100vw;
+      z-index: 4;
+    }
+
+    .navback{
+      width: 0%;
+      height: 5vw;
+      background: #f4f4f4;
+      z-index: 4;
+    }
+
+    .d0{
+      width: 100vw;
+      height: 4vw;
+      background-color: #FFBA30;
+      z-index: 1;
+    }
+
+    .arrow {
+      z-index: 0;
+      height: 0%;
+    }
+
+    .fa-chevron-left {
+      color: #0D4776;
+      position: absolute;
+      z-index: 6;
+      width: 4vw;
+      font-size: 0vw;
+    }
+
+    #click {
+      background-image: url('pic/about/blank.png');
+      height: 16.6vh;
+      width: 20vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      transform: scale(0);
+      -webkit-text-security: none;
+      z-index: 7;
+    }
+
+    .sticky {
+      background-color: #f4f4f4;
+      position: fixed;
+      display: flex;
+      flex-flow: row wrap;
+      list-style-type: none;
+      top:0;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      z-index: 4;
+    }
+
+    .stickyBack {
+      width: 100vw;
+      position: fixed;
+      display: flex;
+      flex-flow: row wrap;
+      list-style-type: none;
+      top:0;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      z-index: 4;
+    }
+
+#d1 {
+    width: 100vw;
+    height: 170vw;
+    position: relative;
+    background-color: #FFBA30;
+    z-index: 1;
+}
+#d2 {
+    width: 100vw;
+    height: 200vw;
+    position: relative;
+    background-color: #e54629;
+    z-index: 3;
+}
+#about {
+      font-family: 'Prompt', sans-serif;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      font-size: 2.5vw;
+      position: relative;
+      color: #0D4776;
+      text-align: center;
+      justify-content: center;
+      top: 8vw;
+      left: 40vw;
+      width: 20vw;
+      z-index: 6;
+      display: inline-block;
+    }
+  .bird {
+      background-image: url('pic/pro/bird.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+     transition: all .2s;
+    }
+    .bi1{
+      top: 360vw;
+      left: 15vw;
+      width: 10vw;
+      height: 10vw;
+    }
+    .bi2{
+      top: 361vw;
+      left: 10vw;
+      width: 5vw;
+      height: 5vw;
+    }
+    .bi3{
+      top: 361vw;
+      left: 20vw;
+      width: 15vw;
+      height: 15vw;
+    }
+    .bi4{
+      top: 365vw;
+      left: 10vw;
+      width: 10vw;
+      height: 10vw;
+    }
+    .bi5{
+      top: 367vw;
+      left: 15vw;
+      width: 5vw;
+      height: 5vw;
+    }
+#sun {
+      background-image: url('pic/pro/sun.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 46vw;
+      left: 22vw;
+      width: 30vw;
+      height: 30vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      -webkit-animation: sunrise 50s infinite;
+    }
+#boat {
+      background-image: url('pic/pro/boat.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 139vw;
+      left: 22vw;
+      width: 30vw;
+      height: 30vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 3;
+      -webkit-animation: boat 50s infinite;
+    }
+    #cloude {
+      background-image: url('pic/pro/cloud1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 20vw;
+      left: 22vw;
+      width: 30vw;
+      height: 30vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 3;
+      -webkit-animation: cloudemove3 50s infinite;
+    }
+    #cloude2 {
+      background-image: url('pic/pro/cloud2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 80vw;
+      left: 22vw;
+      width: 30vw;
+      height: 30vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 3;
+      -webkit-animation: cloudemove4 50s infinite;
+    }
+       #cloude3 {
+      background-image: url('pic/pro/cloud3.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 120vw;
+      left: 60vw;
+      width: 30vw;
+      height: 30vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 3;
+      -webkit-animation: cloudemove4 50s infinite;
+    }
+
+
+    #bg1 {
+      background-image: url('pic/pro/bg1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 100vw;
+      width: 100vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: relative;
+      top: 70vw;
+      z-index: 2;
+    }
+    #ic1 {
+      background-image: url('pic/pro/icon1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 25vw;
+      width: 25vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position:absolute;
+      top: 120vw;
+      left: 5vw;
+      z-index: 3;
+      display: inline-block;}
+     #ic2 {
+      background-image: url('pic/pro/icon2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 25vw;
+      width: 25vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position:absolute;
+      top: 120vw;
+      left: 35vw;
+      z-index: 3;
+      display: inline-block;}
+      #ic3 {
+      background-image: url('pic/pro/icon3.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 25vw;
+      width: 25vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position:absolute;
+      top: 120vw;
+      left: 65vw;
+      z-index: 3;
+      display: inline-block;}
+    #bg2 {
+      background-image: url('pic/pro/bg2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 100vw;
+      width: 100%;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: relative;
+      top: -40vw;
+      z-index: 2;
+    }
+ 
+
+    #contact_1 {
+      font-family: 'Prompt', sans-serif;
+      margin: 0;
+      border: 1;
+      padding: 0;
+      font-size: 2.5vw;
+      position: relative;
+      color: #0D4776;
+      text-align: center;
+      justify-content: center;
+      top: 4vw;
+      left: 22vw;
+      width: 20vw;
+      z-index: 6;
+      display: inline-block;
+    }
+    .topic {
+      font-family: 'Prompt', sans-serif;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      position: relative;
+      color: #0D4776;
+      text-align: left;
+      justify-content: center;
+      width: 65vw;
+      z-index: 6;
+      display: inline-block;
+    }
+
+    .t1 {
+      font-size: 2.5vw;
+      top: 14vw;
+      left: 25vw;
+      
+    }
+    .t2 {
+      color: #f4f4f4;
+      font-size: 3.5vw;
+      top: 85vw;
+      left: 45vw;
+    }
+    .pg {
+      font-family: 'Mitr', sans-serif;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      position: relative;
+      color: #0D4776;
+      text-align: left;
+      justify-content: center;
+      width: 52vw;
+      z-index: 6;
+      display: inline-block;
+    }
+
+    .p1 {
+      font-size: 1.3vw;
+      top: 15vw;
+      left: 25vw;
+    }
+    .p2 {
+      text-align: center;
+      justify-content: center;
+      color: #f4f4f4;
+      font-size: 1.3vw;
+      top: 43vw;
+      left: -10vw;
+    }
+    .p3 {
+      color: #f4f4f4;
+      font-size: 1.3vw;
+      top: 45vw;
+      left: 10vw;
+
+    }
+    .p4 {
+      text-align: center;
+      justify-content: center;
+      color: #f4f4f4;
+      font-size: 1.3vw;
+      top: 149vw;
+      left: 21vw;
+      position: absolute;
+    }
+    .p5 {
+      color: #f4f4f4;
+      font-size: 1.3vw;
+      top: 154vw;
+      left: 41vw;
+      position: absolute;
+    }
+
+.p6 {
+      text-align: center;
+      justify-content: center;
+      color: #f4f4f4;
+      font-size: 1.3vw;
+      top: 149vw;
+      left: 52vw;
+      position: absolute;
+    }
+    .p7 {
+      color: #f4f4f4;
+      font-size: 1.3vw;
+      top: 154vw;
+      left: 72vw;
+      position: absolute;
+    }
+
+
+
+  
+@-webkit-keyframes sunrise {
+      from {top: 100vw;}
+      to {top: 30vw;}
+    }
+
+    @-webkit-keyframes boat {
+      from {left: 50vw;}
+      to {left: 20vw;}
+    }
+
+    @-webkit-keyframes cloudemove3 {
+      from {left: 50vw;}
+      to {left: 20vw;}
+    }
+
+    @-webkit-keyframes cloudemove4 {
+      from {left: 20vw;}
+      to {left: 75vw;}
+    }
+    @-webkit-keyframes cloudemove5 {
+      from {left: 10vw;}
+      to {left: 80vw;}
+    }
+    @-webkit-keyframes cloudemove6 {
+      from {left: 79vw;}
+      to {left: 30vw;}
+    }
+    @-webkit-keyframes cloudemove7 {
+      from {left: 79vw;}
+      to {left: 30vw;}
+    }
+    @-webkit-keyframes cloudemove8 {
+      from {left: 20vw;}
+      to {left: 79vw;}
+    }
+    /*@-webkit-keyframes bluf1 {
+      from {left: 6vw;}
+      to {left: 75vw;}
+    }
+    @-webkit-keyframes nemo1 {
+      from {left: 65vw;}
+      to {left: 6vw;}
+    }
+    @-webkit-keyframes bluf2 {
+      from {left: 0vw;}
+      to {left: 20vw;}
+    }*/
+    @media only screen and (max-width: 1024px) {
+
+    #d1 {
+        width: 100%;
+        height: 160vw;
+        position: relative;
+        background-color: #FFBA30;
+        z-index: 2;
+        }
+    #d2 {
+        width: 100%;
+        height: 250vw;
+        position: relative;
+        background-color: #e54629;
+        z-index: 3;
+      }
+      #about {
+        font-family: 'Prompt', sans-serif;
+        margin: 0;
+        border: 0;
+        padding: 0;
+        font-size: 4.5vw;
+        position: relative;
+        color: #0D4776;
+        text-align: center;
+        justify-content: center;
+        top: 35vw;
+        left: 20vw;
+        width: 65vw;
+        z-index: 6;
+      }
+
+      .navigation nav {
+        position: absolute;
+        z-index: 0;
+      }
+
+      #d0 {
+        position: absolute;
+        z-index: 0;
+      }
+
+      .arrow {
+        display: table;
+        position: fixed;
+        width: 100%;
+        height: 18vw;
+        z-index: 7;
+      }
+
+      .fa-chevron-left {
+        color: #0D4776;
+        position: fixed;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        z-index: 6;
+        padding: 5.3vw 7.5vw;
+        width: 4vw;
+        font-size: 7.5vw;
+      }
+
+      #click {
+        background-image: url('pic/about/blank.png');
+        height: 18vw;
+        width: 20vw;
+        background-size: contain;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        position: absolute;
+        transform: scale(1);
+        -webkit-text-security: none;
+        z-index: 7;
+      }
+
+      .head {
+        background: #f4f4f4;
+        font-family: 'Prompt', sans-serif;
+        margin: 0;
+        border: 0;
+        padding: 0;
+        font-size: 3vw;
+        display: block;
+        position: fixed;
+        color: #0D4776;
+        text-align: center;
+        justify-content: center;
+        width: 100vw;
+        height: 18vw;
+        z-index: 4;
+      }
+      #sun {
+      background-image: url('pic/pro/sun.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 46vw;
+      left: 20vw;
+      width: 25vw;
+      height: 25vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      -webkit-animation: sunrise 50s infinite;
+    }
+      #boat {
+      background-image: url('pic/pro/boat.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 130vw;
+      left: 22vw;
+      width: 30vw;
+      height: 30vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 3;
+      -webkit-animation: boat 50s infinite;
+    }
+
+    #cloude2 {
+      background-image: url('pic/pro/cloud2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 90vw;
+      left: 22vw;
+      width: 20vw;
+      height: 20vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      -webkit-animation: cloudemove4 60s infinite;
+    }
+
+    #cloude3 {
+      background-image: url('pic/pro/cloud3.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 120vw;
+      left: 60vw;
+      width: 30vw;
+      height: 30vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 3;
+      -webkit-animation: cloudemove4 50s infinite;
+    }
+
+    
+      .t1 {
+        font-size: 3vw;
+        top: 13vw;
+        left: 20vw;
+        width: 65vw;
+      }
+
+      .t2 {
+        font-size: 3vw;
+        top: 85vw;
+        left: 45vw;
+      }
+
+      .p1 {
+        font-size: 2.5vw;
+        top: 15vw;
+        left: 21vw;
+        width: 60vw
+      }
+
+      .p2 {
+        font-size: 2.5vw;
+        top: 45vw;
+        left: -15vw;
+        width: 60vw;
+      }
+      .p3 {
+        font-size: 2vw;
+        top: 47vw;
+        left: 5vw;
+        width: 60vw;
+      }
+      .p4 {
+        font-size: 2.5vw;
+        top: 150vw;
+        left: 20vw;
+        width: 60vw;
+      }
+      .p5 {
+        font-size: 2vw;
+        top: 156vw;
+        left: 35vw;
+        width: 60vw;
+      }
+      .p6 {
+        font-size: 2.5vw;
+        top: 150vw;
+        left: 45vw;
+        width: 60vw;
+      }
+      .p7 {
+        font-size: 2vw;
+        top: 157vw;
+        left: 65vw;
+        width: 60vw;
+      }
+      #bg1 {
+      background-image: url('pic/pro/bg1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 100vw;
+      width: 100vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: relative;
+      top: 60.5vw;
+      z-index: 2;
+    }
+    #bg2 {
+      background-image: url('pic/pro/bg2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 100vw;
+      width: 100%;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: relative;
+      top: -40vw;
+      z-index: 2;
+    }
+     
+      
+    }
+  </style>
+</head>
+<body>
+	<div class="arrow">
+      <a id="click" href="index.html"></a>
+      <i class="fas fa-chevron-left"></i>
+  </div>  
+
+    <div class="head">
+      <b><br>ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบน<br>อันเนื่องมาจากพระราชดำริ<br><br></b>
+    </div>
+  
+
+      <header class="navigation">
+        <nav>
+          <div id="navback" class="navback"></div>
+            <ul id="navbar">
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="about.html">ประวัติ</a></li>
+                <li><a href="travel.html">สถานที่ท่องเที่ยว</a></li>
+                <li><a href="work.html">ผลงาน</a></li>
+                <li><a href="pro.html">โครงงานและงานกิจกรรม</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="d0" class=""></div>
+    <div id="d1">
+      <div id="bg1"></div>
+      <div id = "bi1"class="bird bi1"></div>
+      <div id= "bi2" class="bird bi2"></div>
+      <div id= "bi3" class="bird bi3"></div>
+      <div id= "bi4" class="bird bi4"></div>
+      <div id= "bi5" class="bird bi5"></div>
+      <div id="sun"></div>
+      <div id="boat"></div>
+      <div id="cloude"></div>
+      <div id="cloude2"></div>
+      <div id="cloude3"></div>
+      <div><h1 class="topic t1">การอนุรักษณ์ทรัพยากรธรรมชาติท้องทะเล</h1></div>
+      <p class='pg p1'>เพื่อแพร่ขยายพันธุ์ลูกหอยให้ราษฎรเก็บไปเลี้ยงเป็นอาชีพเสริมรายได้และลดมลภาวะจาก<br>
+แพลงก์ตอนพืชที่มีมากในแหล่งน้ำอ่าวคุ้งกระเบน ส่งเสริมให้ราษฎรเลี้ยงหอยนางรมแบบแขวน<br>
+การเลี้ยงหอยนางรมเริ่มขึ้นครั้งแรกที่จังหวัดจันทบุรีเมื่อประมาณปี พ.ศ. 2485<br> จนกระทั่งปัจจุบันพบว่าหอยนางรมที่เลี้ยงกันอยู่มี 3 ชนิดคือหอย ตะโกรมกรามขาว<br>
+หอยตะโกรมกราม ดำและหอยนางรมปากจีบ </p>
+    </div>
+    <div id="d2">
+      <h1 class="topic t2">งานกิจกรรม</h1>
+     <div id="bg2"></div>
+     <div id="ic1"></div>
+     <div id="ic2"></div>
+     <div id="ic3"></div>
+     <p class="pg p2">อาสาเก็บขยะ<br>ตามชายหาด</p>
+     <p class="pg p3">เพื่อตัดวงจรขยะที่เป็นมลพิษต่อ<br>
+สภาพแวดล้อมทั้งยังเป็นอันตราย<br>ต่อชีวิตสัตว์ทะเลและลดปริมาณ
+<br>ขยะให้น้อยลงตลอดจนปลูกฝังให้<br>
+เกิดความคิดที่จะช่วยกันรักษา<br>
+สิ่งแวดล้อมให้มากยิ่งขึ้น</p>
+<p class="pg p4">อาสาสร้างบ้านปลา</p>
+     <p class="pg p5">เพื่อช่วยลดปัญหาขยะและช่วยเพิ่ม<br>
+ความสมบูรณ์ของทรัพยากรทะเลและ<br>
+ชายฝั่งสร้างสมดุลสู่ระบบนิเวศอย่าง<br>
+ยั่งยืนได้อีกด้วย</p>
+<p class="pg p6">อาสาสร้าง<br>ฝายชะลอน้ำ</p>
+     <p class="pg p7">เป็นเครื่องมือที่ช่วยลดความสูญเสีย<br>
+      จากปัญหาน้ำท่วมและเพิ่มความ<br>
+ชุ่มชื่นให้ผืนป่า</p>
+    </div>
+    <script type="text/javascript">
+      
+      window.onscroll = function() {myFunction()};
+
+      var navbar = document.getElementById("navbar");
+      var navback = document.getElementById("navback");
+      var d0 = document.getElementById("d0");
+
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+          navback.classList.add("stickyBack");
+          d0.classList.add("d0");
+        } else {
+          navbar.classList.remove("sticky");
+          navback.classList.remove("stickyBack");
+          d0.classList.remove("d0");
+        }
+      }
+		function birb() {
+			let y = window.pageYOffset - d1.offsetTop + d1.offsetHeight;
+			console.log(y);
+			bi1.style.marginTop = `-${y*1.4}px`;
+			bi2.style.marginTop = `-${y*1.3}px`;
+      bi3.style.marginTop = `-${y*1.2}px`;
+      bi4.style.marginTop = `-${y*1.1}px`;
+      bi5.style.marginTop = `-${y*1.5}px`;
+			/*b2.style.marginTop = `-${y*1.75}px`;
+			b3.style.marginTop = `-${y*1.5}px`;*/
+		}
+		window.addEventListener("scroll", birb);
+
+    </script>
+
+</body>
+</html>
