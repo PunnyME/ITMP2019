@@ -42,7 +42,7 @@
       height: 525vw;
       position: relative;
       background-color: #0FB49E;
-      z-index: 3;
+      z-index: 1;
     }
 
     .bar {
@@ -255,8 +255,17 @@
       position: absolute;
       z-index: 8;
       display: inline-block;
-      top: 43vw;
+      top: 52vw;
       left: 50vw;
+    }
+
+    .boat {
+        animation: boat ease-in-out 3s infinite alternate;
+    }
+     
+    @keyframes boat {
+        0% { transform: translateX(3vw); }
+        100% { transform: translateX(0vw); }
     }
 
     #ubridge1 {
@@ -715,7 +724,7 @@
       top: 4vw;
       left: 22vw;
       width: 50vw;
-      z-index: 6;
+      z-index: 10;
       display: inline-block;
     }
 
@@ -837,6 +846,275 @@
       color: #f4f4f4;
     }
 
+    #cloude1 {
+      background-image: url('pic/index/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 10vw;
+      left: 22vw;
+      width: 16vw;
+      height: 6vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      -webkit-animation: cloudemove1 86s infinite;
+    }
+
+    #cloude2 {
+      background-image: url('pic/index/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 6vw;
+      left: 22vw;
+      width: 14vw;
+      height: 4vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      -webkit-animation: cloudemove2 76s infinite;
+    }
+
+    #cloude3 {
+      background-image: url('pic/index/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 9vw;
+      left: 22vw;
+      width: 7vw;
+      height: 3vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      -webkit-animation: cloudemove3 70s infinite;
+    }
+
+    #cloude4 {
+      background-image: url('pic/index/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 19vw;
+      left: 22vw;
+      width: 19vw;
+      height: 10vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      -webkit-animation: cloudemove4 68s infinite;
+    }
+
+    #cloude5 {
+      background-image: url('pic/index/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 3vw;
+      left: 22vw;
+      width: 15vw;
+      height: 7vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      -webkit-animation: cloudemove5 77s infinite;
+    }
+
+    #cloude6 {
+      background-image: url('pic/index/cloude.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 9vw;
+      left: 22vw;
+      width: 10vw;
+      height: 10vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      -webkit-animation: cloudemove6 85s infinite;
+    }
+
+    @-webkit-keyframes cloudemove1 {
+      from {left: 10vw;}
+      to {left: 80vw;}
+    }
+
+    @-webkit-keyframes cloudemove2 {
+      from {left: 25vw;}
+      to {left: 65vw;}
+    }
+
+    @-webkit-keyframes cloudemove3 {
+      from {left: 40vw;}
+      to {left: 70vw;}
+    }
+
+    @-webkit-keyframes cloudemove4 {
+      from {left: 10vw;}
+      to {left: 80vw;}
+    }
+
+    @-webkit-keyframes cloudemove5 {
+      from {left: 25vw;}
+      to {left: 65vw;}
+    }
+
+    @-webkit-keyframes cloudemove6 {
+      from {left: 50vw;}
+      to {left: 70vw;}
+    }
+
+    #fish1 {
+      background-image: url('pic/index/fish1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 220vw;
+      left: 91vw;
+      width: 8vw;
+      height: 6vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      opacity: 0.5;
+      animation: swim1 ease-in-out 30s infinite ;
+    }
+
+    #fish2 {
+      background-image: url('pic/index/fish2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 232vw;
+      left: 70vw;
+      width: 7vw;
+      height: 6vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      opacity: 0.5;
+      animation: swim2 ease-in-out 30s infinite ;
+    }
+
+    #fish3 {
+      background-image: url('pic/index/fish3.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 250vw;
+      left: 81vw;
+      width: 6vw;
+      height: 6vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      opacity: 0.5;
+      animation: swim2 ease-in-out 30s infinite ;
+    }
+     
+    #fish4 {
+      background-image: url('pic/index/fish3.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 225vw;
+      left: 75vw;
+      width: 10vw;
+      height: 7vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      transform: scaleX(-1);
+      z-index: 1;
+      opacity: 0.5;
+      animation: swim2 ease-in-out 30s infinite ;
+    }
+
+    #fish5 {
+      background-image: url('pic/index/fish2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 240vw;
+      left: 90vw;
+      width: 9vw;
+      height: 6vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      opacity: 0.5;
+      animation: swim2 ease-in-out 30s infinite ;
+    }
+
+    #fish6 {
+      background-image: url('pic/index/fish1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 245vw;
+      left: 61vw;
+      width: 5vw;
+      height: 6vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      opacity: 0.5;
+      animation: swim1 ease-in-out 30s infinite ;
+    }
+
+    #fish7 {
+      background-image: url('pic/index/fish1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      top: 256vw;
+      left: 71vw;
+      width: 7vw;
+      height: 6vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+      opacity: 0.5;
+      animation: swim1 ease-in-out 30s infinite ;
+    }
+
+    @keyframes swim1 {
+        0% {transform: translateX(0vw);}
+        100% {transform: translateX(-60vw);}
+    }
+
+    @keyframes swim2 {
+        0% {transform: translateX(-40vw);}
+        100% {transform: translateX(0vw);}
+    }
+
     @media only screen and (max-width: 1024px) {
 
       #d2 {
@@ -931,7 +1209,7 @@
       #boat {
         height: 24vw;
         width: 43.5vw;
-        top: 51vw;
+        top: 56vw;
         left: 50vw;
       }
 
@@ -1183,6 +1461,55 @@
         width: 50vw;
       }
 
+      #fish1 {
+        top: 270vw;
+        left: 91vw;
+        width: 8vw;
+        height: 6vw;
+      }
+
+      #fish2 {
+        top: 282vw;
+        left: 70vw;
+        width: 7vw;
+        height: 6vw;
+      }
+
+      #fish3 {
+        top: 300vw;
+        left: 81vw;
+        width: 6vw;
+        height: 6vw;
+      }
+       
+      #fish4 {
+        top: 275vw;
+        left: 75vw;
+        width: 10vw;
+        height: 7vw;
+      }
+
+      #fish5 {
+        top: 290vw;
+        left: 90vw;
+        width: 9vw;
+        height: 6vw;
+      }
+
+      #fish6 {
+        top: 295vw;
+        left: 61vw;
+        width: 5vw;
+        height: 6vw;
+      }
+
+      #fish7 {
+        top: 306vw;
+        left: 71vw;
+        width: 7vw;
+        height: 6vw;
+      }
+
     }
 
   </style>
@@ -1225,11 +1552,11 @@
       <div id="island1"></div>
       <div id="island2"></div>
       <div id="water1"></div>
-      <h1 class="name n1">ศูนย์ศึกษาการพัฒนา</h1>
-      <h1 class="name n2">อ่าวคุ้งกระเบน</h1>
-      <h1 class="name n3">อันเนื่องมาจากพระราชดำริ</h1>
+      <h1 id="name1" class="name n1">ศูนย์ศึกษาการพัฒนา</h1>
+      <h1 id="name2" class="name n2">อ่าวคุ้งกระเบน</h1>
+      <h1 id="name3" class="name n3">อันเนื่องมาจากพระราชดำริ</h1>
       <div id="bridge1"></div>
-      <div id="boat"></div>
+      <div id="boat" class="boat"></div>
       <div id="ubridge1"></div>
       <div id="line"></div>
       <h1 class="topic t1">เกี่ยวกับ</h1>
@@ -1246,6 +1573,9 @@
       <h1 class="para p2">สะพานไม้ที่ทอดตัวยาวสู่ใจกลางของป่าชายเลน<br>
 ในระยะทาง 1,600 ม. <a href="travel.html">อ่านต่อ</a></h1>
       <div id="utree1"></div>
+      <div id="cloude1"></div>
+      <div id="cloude2"></div>
+      <div id="cloude3"></div>
     </div>
 
     <div id="d2"></div>
@@ -1272,6 +1602,16 @@
       <h1 class="para p5"><a style="color: #f4f4f4;" href="contact.html">แผนที่เส้นทาง</a></h1>
       <div id="water4"></div>
       <div id="water5"></div>
+      <div id="cloude4"></div>
+      <div id="cloude5"></div>
+      <div id="cloude6"></div>
+      <div id="fish1"></div>
+      <div id="fish2"></div>
+      <div id="fish3"></div>
+      <div id="fish4"></div>
+      <div id="fish5"></div>
+      <div id="fish6"></div>
+      <div id="fish7"></div>
     </div>
 
     <div id="d4">
@@ -1280,6 +1620,7 @@
 
 
     <script type="text/javascript">
+
       function myFunction() {
         var x = document.getElementById("myLinks");
         if (x.style.display === "block") {
@@ -1292,6 +1633,46 @@
           cross.classList.remove("none");
         }
       }
+
+      function cloudePlay1(){
+
+        let ey = d3.offsetTop;
+        let y = window.pageYOffset;
+        let yBottom = window.pageYOffset+window.innerHeight;
+
+        if (yBottom>ey+600) {
+
+          cloude4.style.marginTop = `${(y-ey)*0.014}vw`;
+          cloude5.style.marginTop = `${(y-ey)*0.015}vw`;
+          cloude6.style.marginTop = `${(y-ey)*0.016}vw`;
+          
+        }
+
+        if (yBottom>ey+1000) {
+
+          fish1.style.marginTop = `${(y-ey)*0.01}vw`;
+          fish2.style.marginTop = `${(y-ey)*0.008}vw`;
+          fish3.style.marginTop = `${(y-ey)*0.009}vw`;
+          fish4.style.marginTop = `${(y-ey)*0.0095}vw`;
+          fish5.style.marginTop = `${(y-ey)*0.0105}vw`;
+          fish6.style.marginTop = `${(y-ey)*0.0085}vw`;
+          fish7.style.marginTop = `${(y-ey)*0.011}vw`;
+        }
+
+        cloude1.style.marginTop = `${y*0.024}vw`;
+        cloude2.style.marginTop = `${y*0.025}vw`;
+        cloude3.style.marginTop = `${y*0.026}vw`;
+
+        name1.style.marginTop = `${y*(-0.0045)}vw`;
+        name2.style.marginTop = `${y*(-0.0045)}vw`;
+        name3.style.marginTop = `${y*(-0.0045)}vw`;
+
+        boat.style.marginTop = `${y*(-0.006)}vw`;
+
+      }
+
+      window.addEventListener("scroll", cloudePlay1);
+
     </script>
 
 </body>
