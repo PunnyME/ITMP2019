@@ -276,6 +276,16 @@
       left: 10vw;
     }
 
+    #line {
+      width: 17vw;
+      height: 0.35vw;
+      position: absolute;
+      background-color: #86a3ba;
+      top: 54vw;
+      left: 11.5vw;
+      z-index: 7;
+    }
+
     #water2 {
       background-image: url('pic/index/water2.png');
       margin: 0;
@@ -306,9 +316,34 @@
       position: absolute;
       top: 85vw;
       left: 45vw;
-      z-index: 7;
+      z-index: 8;
       display: inline-block;
+      
     }
+    
+    #r9_r {
+      background-image: url('pic/index/r9_r.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 35vw;
+      width: 35vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 85vw;
+      left: 45vw;
+      opacity: 0;
+      z-index: 8;
+      display: inline-block;
+      transition: .5s ease;
+    }
+
+    #r9_r:hover {
+        opacity: 1;
+    }
+
 
     #tree1 {
       background-image: url('pic/index/tree1.png');
@@ -343,6 +378,51 @@
       display: inline-block;
     }
 
+    #cam {
+      background-image: url('pic/index/cam.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 18vw;
+      width: 18vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 169vw;
+      left: 52.5vw;
+      z-index: 8;
+      display: inline-block;
+    }
+
+    .swing {
+        animation: swing ease-in-out 1.75s infinite alternate;
+        transform-origin: center 2vw;
+        float:left;
+    }
+     
+    @keyframes swing {
+        0% { transform: rotate(10deg); }
+        100% { transform: rotate(-10deg); }
+    }
+
+    #cover {
+      background-image: url('pic/index/cover.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 7.6vw;
+      width: 5vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 167vw;
+      left: 59vw;
+      z-index: 9;
+      display: inline-block;
+    }
+
     #utree1 {
       background-image: url('pic/index/utree1.png');
       margin: 0;
@@ -373,6 +453,42 @@
       top: 37vw;
       z-index: 7;
       display: inline-block;
+    }
+
+    #house {
+      background-image: url('pic/index/house.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 7vw;
+      width: 24vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 57.8vw;
+      left: 6vw;
+      z-index: 7;
+      display: inline-block;
+    }
+
+    .fa-chevron-down {
+      color: #f4f4f4;
+      position: absolute;
+      top: 50vw;
+      left: 16.5vw;
+      z-index: 7;
+      width: 4vw;
+      font-size: 5vw;
+    }
+
+    .down {
+        animation: down ease-in-out 1.75s infinite alternate;
+    }
+     
+    @keyframes down {
+        0% { transform: translateY(2vw); }
+        100% { transform: translateY(0vw); }
     }
 
     #tree2 {
@@ -640,7 +756,7 @@
 
     .t1 {
       font-size: 2.6vw;
-      top: 51.8vw;
+      top: 52vw;
       left: 24vw;
     }
 
@@ -805,6 +921,13 @@
         left: 13vw;
       }
 
+      #line {
+        width: 17vw;
+        height: 0.5vw;
+        top: 74.2vw;
+        left: 16.2vw;
+      }
+
       #boat {
         height: 24vw;
         width: 43.5vw;
@@ -826,6 +949,13 @@
         left: 47vw;
       }
 
+      #r9_r {
+        height: 36vw;
+        width: 36vw;
+        top: 100vw;
+        left: 47vw;
+      }
+
       #tree1 {
         height: 102vw;
         width: 100%;
@@ -839,6 +969,21 @@
         left: 12vw;
       }
 
+      #cam {
+        height: 26vw;
+        width: 26vw;
+        top: 189vw;
+        left: 49.5vw;
+      }
+
+      #cover {
+        height: 7.6vw;
+        width: 5vw;
+        top: 188vw;
+        left: 59.68vw;
+        z-index: 9;
+      }
+
       #utree1 {
         height: 12vw;
         width: 100%;
@@ -849,6 +994,13 @@
         height: 43vw;
         width: 71vw;
         top: 37vw;
+      }
+
+      .fa-chevron-down {
+        top: 50vw;
+        left: 15.5vw;
+        width: 4vw;
+        font-size: 6vw;
       }
 
       #tree2 {
@@ -1079,11 +1231,15 @@
       <div id="bridge1"></div>
       <div id="boat"></div>
       <div id="ubridge1"></div>
+      <div id="line"></div>
       <h1 class="topic t1">เกี่ยวกับ</h1>
       <h1 class="para p1">ได้เริ่มก่อตั้งตามพระราชดำริพระบาทสมเด็จ<br>พระเจ้าอยู่หัวปริทรมหาภูมิพลอดุลเดชในคราว<br>เสด็จประกอบพิธีเปิดพระบรมราชานุเสาวรีย์<br>สมเด็จ
 พระเจ้าตากสินมหาราช ที่จังหวัดจันทบุรี<br> เมื่อวันที่ ๒๘ ธันวาคมพ.ศ. ๒๕๒๔  <a href="about.html">อ่านต่อ</a></h1>
       <div id="water2"></div>
       <div id="r9"></div>
+      <a href="about.html"><div id="r9_r"></div></a>
+      <div id="cover"></div>
+      <a href="travel.html"><div id="cam" class="swing"></div></a>
       <div id="tree1"></div>
       <div id="label"></div>
       <h1 class="topic t2">สถานที่ท่องเที่ยว</h1>
@@ -1096,6 +1252,8 @@
 
     <div id="d3">
       <div id="center"></div>
+      <i id="arrow" class="fas fa-chevron-down down"></i>
+      <a href="work.html"><div id="house"></div></a>
       <h1 class="topic t3">ผลงาน</h1>
       <h1 class="para p3">ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบนอันเนื่อง<br>มาจากพระราชดำริเพื่อศึกษาค้นคว้าและวิจัย<br>เรื่องระบบนิเวศทางธรรมชาติ <a href="work.html">อ่านต่อ</a></h1>
       <div id="tree2"></div>
