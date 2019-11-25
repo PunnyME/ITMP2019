@@ -1,18 +1,20 @@
-<!DOCTYPE html>
+     <!DOCTYPE html>
 <html>
 <head>
 <title>ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบนอันเนื่องมาจากพระราชดำริ</title>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Trirong&display=swap" rel="stylesheet">
+  <link href="" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Prompt:700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/8bb0907cde.js" crossorigin="anonymous"></script>
   <style type="text/css">
    body {
       margin:0;
+
       /*background-color: #32B6BD;*/
     }
 
     #d1 {
+      overflow: hidden;
       width: 100%;
       height: 145vw;
       position: relative;
@@ -21,11 +23,57 @@
     }
 
     #d2 {
+      overflow: hidden;
       width: 100%;
       height: 140vw;
       position: relative;
       background-color: #32B6BD;
       z-index: 3;
+    }
+
+    .bar {
+      z-index: 0;
+      height: 0%;
+    }
+
+    .fa-bars {
+      color: #0D4776;
+      position: absolute;
+      z-index: 6;
+      width: 4vw;
+      font-size: 0vw;
+    }
+
+    .fa-times {
+      color: #0D4776;
+      position: absolute;
+      z-index: 6;
+      width: 4vw;
+      font-size: 0vw;
+    }
+
+    .icon {
+      background: black;
+      display: block;
+      position: absolute;
+      right: 22%;
+      top: 0%;
+    }
+
+    .mbar {
+      font-family: 'Prompt', sans-serif;
+      color: #f4f4f4;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 2.5vw 1vw;
+      text-align: center;
+      text-decoration: none;
+      font-size: 4vw;
+      display: block;
+    }
+
+    #myLinks {
+      display: none;
+      z-index: 7;
     }
 
     .navigation nav {
@@ -49,12 +97,12 @@
 
     li a {
         font-family: 'Prompt', sans-serif;
-        height: 3vw;
+        /*height: 3vw;*/
         display: block;
         color: #0D4776;
         font-size: 1vw;
         text-align: center;
-        padding: 1vw 2.5vw;
+        padding: 1.7vw 2.5vw;
         text-decoration: none;
         z-index: 5;
         transition: all 0.4s;
@@ -160,6 +208,10 @@
     background-color: #e54629;
     z-index: 3;
 }
+#d2-1{
+  display: flex;
+  flex-direction: row;
+}
 #about {
       font-family: 'Prompt', sans-serif;
       margin: 0;
@@ -224,15 +276,15 @@
       border: 0;
       padding: 0;
       top: 46vw;
-      left: 22vw;
-      width: 30vw;
-      height: 30vw;
+      left: 10vw;
+      width: 25vw;
+      height: 25vw;
       background-size: contain;
       background-position: center bottom;
       background-repeat: no-repeat;
       position: absolute;
       z-index: 1;
-      -webkit-animation: sunrise 50s infinite;
+      -webkit-animation: sunrise 15s infinite;
     }
 #boat {
       background-image: url('pic/pro/boat.png');
@@ -255,7 +307,7 @@
       margin: 0;
       border: 0;
       padding: 0;
-      top: 20vw;
+      top: 28vw;
       left: 22vw;
       width: 30vw;
       height: 30vw;
@@ -264,7 +316,7 @@
       background-repeat: no-repeat;
       position: absolute;
       z-index: 3;
-      -webkit-animation: cloudemove3 50s infinite;
+      -webkit-animation: cloudemove3 25s infinite;
     }
     #cloude2 {
       background-image: url('pic/pro/cloud2.png');
@@ -375,7 +427,7 @@
     }
  
 
-    #contact_1 {
+    #work_1 {
       font-family: 'Prompt', sans-serif;
       margin: 0;
       border: 1;
@@ -407,18 +459,18 @@
 
     .t1 {
       font-size: 2.5vw;
-      top: 14vw;
-      left: 25vw;
+      top: -69vw;
+      left: 40vw;
       
     }
     .t2 {
       color: #f4f4f4;
       font-size: 3.5vw;
       top: 85vw;
-      left: 45vw;
+      left: 40vw;
     }
     .pg {
-      font-family: 'Mitr', sans-serif;
+      font-family: 'Sarabun', sans-serif;
       margin: 0;
       border: 0;
       padding: 0;
@@ -433,8 +485,8 @@
 
     .p1 {
       font-size: 1.3vw;
-      top: 15vw;
-      left: 25vw;
+      top: -67vw;
+      left: 40vw;
     }
     .p2 {
       text-align: center;
@@ -490,7 +542,7 @@
   
 @-webkit-keyframes sunrise {
       from {top: 100vw;}
-      to {top: 30vw;}
+      to {top: 0vw;}
     }
 
     @-webkit-keyframes boat {
@@ -499,13 +551,13 @@
     }
 
     @-webkit-keyframes cloudemove3 {
-      from {left: 50vw;}
+      from {left: 40vw;}
       to {left: 20vw;}
     }
 
     @-webkit-keyframes cloudemove4 {
       from {left: 20vw;}
-      to {left: 75vw;}
+      to {left: 40vw;}
     }
     @-webkit-keyframes cloudemove5 {
       from {left: 10vw;}
@@ -546,10 +598,53 @@
         }
     #d2 {
         width: 100%;
-        height: 250vw;
+        height: 200vw;
         position: relative;
         background-color: #e54629;
         z-index: 3;
+      }
+
+      .bar {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 18vw;
+        right: 0;
+        top: 0;
+        z-index: 10;
+      }
+
+      .fa-bars {
+        color: #0D4776;
+        position: fixed;
+        display: flex;
+        text-align: center;
+        vertical-align: middle;
+        align-items: flex-end;
+        z-index: 7;
+        padding: 5.3vw 7.5vw;
+        width: 7vw;
+        font-size: 7.5vw;
+      }
+
+      .fa-times {
+        color: #0D4776;
+        position: fixed;
+        display: flex;
+        text-align: center;
+        vertical-align: middle;
+        align-items: flex-end;
+        z-index: 7;
+        padding: 5.3vw 8vw;
+        width: 7vw;
+        font-size: 7.5vw;
+      }
+      .none {
+        color: #0D4776;
+        position: absolute;
+        z-index: 6;
+        width: 4vw;
+        font-size: 0vw;
       }
       #about {
         font-family: 'Prompt', sans-serif;
@@ -696,7 +791,7 @@
     
       .t1 {
         font-size: 3vw;
-        top: 13vw;
+        top: -52vw;
         left: 20vw;
         width: 65vw;
       }
@@ -704,12 +799,12 @@
       .t2 {
         font-size: 3vw;
         top: 85vw;
-        left: 45vw;
+        left: 40vw;
       }
 
       .p1 {
         font-size: 2.5vw;
-        top: 15vw;
+        top: -49vw;
         left: 21vw;
         width: 60vw
       }
@@ -746,6 +841,7 @@
       }
       .p7 {
         font-size: 2vw;
+        width: fit-content;
         top: 157vw;
         left: 65vw;
         width: 60vw;
@@ -761,7 +857,7 @@
       background-position: center bottom;
       background-repeat: no-repeat;
       position: relative;
-      top: 60.5vw;
+      top: 60vw;
       z-index: 2;
     }
     #bg2 {
@@ -784,9 +880,28 @@
   </style>
 </head>
 <body>
-	<div class="arrow">
-      <a id="click" href="index.html"></a>
-      <i class="fas fa-chevron-left"></i>
+	<div class="bar">
+    <div id="myLinks">
+
+      <div class="head">
+      <b><br>ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบน<br>อันเนื่องมาจากพระราชดำริ<br><br></b>
+    </div>
+      <a class="mbar" href="#blank"> </a>
+      <a class="mbar" href="#blank"> </a>
+      <a class="mbar" href="#blank"> </a>
+      <a class="mbar" href="#blank"> </a>
+      <a class="mbar" href="index.html">หน้าหลัก</a>
+      <a class="mbar" href="about.html">เกี่ยวกับ</a>
+      <a class="mbar" href="travel.html">สถานที่ท่องเที่ยว</a>
+      <a class="mbar" href="work.html">ผลงาน</a>
+      <a class="mbar" href="pro.html">โครงงานและงานกิจกรรม</a>
+      <a class="mbar" href="contact.html">ติดต่อ</a>
+    </div>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction0()">
+      <i id="menu" class="fas fa-bars"></i>
+      <i id="cross" class="fas fa-times none"></i>
+    </a>
   </div>  
 
     <div class="head">
@@ -828,10 +943,11 @@
     </div>
     <div id="d2">
       <h1 class="topic t2">งานกิจกรรม</h1>
-     <div id="bg2"></div>
+      <div id="bg2"></div>
+      <div id="d2-1">
      <div id="ic1"></div>
      <div id="ic2"></div>
-     <div id="ic3"></div>
+     <div id="ic3"></div></div>
      <p class="pg p2">อาสาเก็บขยะ<br>ตามชายหาด</p>
      <p class="pg p3">เพื่อตัดวงจรขยะที่เป็นมลพิษต่อ<br>
 สภาพแวดล้อมทั้งยังเป็นอันตราย<br>ต่อชีวิตสัตว์ทะเลและลดปริมาณ
@@ -849,6 +965,19 @@
 ชุ่มชื่นให้ผืนป่า</p>
     </div>
     <script type="text/javascript">
+
+      function myFunction0() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+          cross.classList.add("none");
+          menu.classList.remove("none");
+        } else {
+          x.style.display = "block";
+          menu.classList.add("none");
+          cross.classList.remove("none");
+        }
+      }
       
       window.onscroll = function() {myFunction()};
 

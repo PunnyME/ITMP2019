@@ -3,7 +3,7 @@
 <head>
 	<title>ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบนอันเนื่องมาจากพระราชดำริ</title>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Trirong&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sarabun:300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Prompt:700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/8bb0907cde.js" crossorigin="anonymous"></script>
   <style type="text/css">
@@ -11,6 +11,51 @@
     body {
       margin:0;
       background-color: #fcfbf9;
+    }
+
+    .bar {
+      z-index: 0;
+      height: 0%;
+    }
+
+    .fa-bars {
+      color: #0D4776;
+      position: absolute;
+      z-index: 6;
+      width: 4vw;
+      font-size: 0vw;
+    }
+
+    .fa-times {
+      color: #0D4776;
+      position: absolute;
+      z-index: 6;
+      width: 4vw;
+      font-size: 0vw;
+    }
+
+    .icon {
+      background: black;
+      display: block;
+      position: absolute;
+      right: 22%;
+      top: 0%;
+    }
+
+    .mbar {
+      font-family: 'Prompt', sans-serif;
+      color: #f4f4f4;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 2.5vw 1vw;
+      text-align: center;
+      text-decoration: none;
+      font-size: 4vw;
+      display: block;
+    }
+
+    #myLinks {
+      display: none;
+      z-index: 7;
     }
 
     .navigation nav {
@@ -34,12 +79,12 @@
 
     li a {
         font-family: 'Prompt', sans-serif;
-        height: 3vw;
+        /*height: 3vw;*/
         display: block;
         color: #0D4776;
         font-size: 1vw;
         text-align: center;
-        padding: 1vw 2.5vw;
+        padding: 1.7vw 2.5vw;
         text-decoration: none;
         z-index: 5;
         transition: all 0.4s;
@@ -208,6 +253,49 @@
         z-index: 0;
       }
 
+      .bar {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 18vw;
+        right: 0;
+        top: 0;
+        z-index: 10;
+      }
+
+      .fa-bars {
+        color: #0D4776;
+        position: fixed;
+        display: flex;
+        text-align: center;
+        vertical-align: middle;
+        align-items: flex-end;
+        z-index: 7;
+        padding: 5.3vw 7.5vw;
+        width: 7vw;
+        font-size: 7.5vw;
+      }
+
+      .fa-times {
+        color: #0D4776;
+        position: fixed;
+        display: flex;
+        text-align: center;
+        vertical-align: middle;
+        align-items: flex-end;
+        z-index: 7;
+        padding: 5.3vw 8vw;
+        width: 7vw;
+        font-size: 7.5vw;
+      }
+      .none {
+        color: #0D4776;
+        position: absolute;
+        z-index: 6;
+        width: 4vw;
+        font-size: 0vw;
+      }
+
       #d0 {
         position: absolute;
         z-index: 0;
@@ -300,10 +388,29 @@
 </head>
 <body>
 
-  <div class="arrow">
-      <a id="click" href="index.html"></a>
-      <i class="fas fa-chevron-left"></i>
-  </div>  
+  <div class="bar">
+    <div id="myLinks">
+
+      <div class="head">
+      <b><br>ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบน<br>อันเนื่องมาจากพระราชดำริ<br><br></b>
+    </div>
+      <a class="mbar" href="#blank"> </a>
+      <a class="mbar" href="#blank"> </a>
+      <a class="mbar" href="#blank"> </a>
+      <a class="mbar" href="#blank"> </a>
+      <a class="mbar" href="index.html">หน้าหลัก</a>
+      <a class="mbar" href="about.html">เกี่ยวกับ</a>
+      <a class="mbar" href="travel.html">สถานที่ท่องเที่ยว</a>
+      <a class="mbar" href="work.html">ผลงาน</a>
+      <a class="mbar" href="pro.html">โครงงานและงานกิจกรรม</a>
+      <a class="mbar" href="contact.html">ติดต่อ</a>
+    </div>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction0()">
+      <i id="menu" class="fas fa-bars"></i>
+      <i id="cross" class="fas fa-times none"></i>
+    </a>
+  </div>
 
     <div class="head">
       <b><br>ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบน<br>อันเนื่องมาจากพระราชดำริ<br><br></b>
@@ -334,6 +441,19 @@
     
 
     <script type="text/javascript">
+
+      function myFunction0() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+          cross.classList.add("none");
+          menu.classList.remove("none");
+        } else {
+          x.style.display = "block";
+          menu.classList.add("none");
+          cross.classList.remove("none");
+        }
+      }
       
       window.onscroll = function() {myFunction()};
 

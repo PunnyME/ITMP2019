@@ -3,7 +3,7 @@
 <head>
 <title>ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบนอันเนื่องมาจากพระราชดำริ</title>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Trirong&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sarabun:300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Prompt:700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/8bb0907cde.js" crossorigin="anonymous"></script>
   <style type="text/css">
@@ -28,6 +28,51 @@
       z-index: 3;
     }
 
+    .bar {
+      z-index: 0;
+      height: 0%;
+    }
+
+    .fa-bars {
+      color: #0D4776;
+      position: absolute;
+      z-index: 6;
+      width: 4vw;
+      font-size: 0vw;
+    }
+
+    .fa-times {
+      color: #0D4776;
+      position: absolute;
+      z-index: 6;
+      width: 4vw;
+      font-size: 0vw;
+    }
+
+    .icon {
+      background: black;
+      display: block;
+      position: absolute;
+      right: 22%;
+      top: 0%;
+    }
+
+    .mbar {
+      font-family: 'Prompt', sans-serif;
+      color: #f4f4f4;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 2.5vw 1vw;
+      text-align: center;
+      text-decoration: none;
+      font-size: 4vw;
+      display: block;
+    }
+
+    #myLinks {
+      display: none;
+      z-index: 7;
+    }
+
     .navigation nav {
       margin: 0;
       padding: 0;
@@ -49,12 +94,12 @@
 
     li a {
         font-family: 'Prompt', sans-serif;
-        height: 3vw;
+        /*height: 3vw;*/
         display: block;
         color: #0D4776;
         font-size: 1vw;
         text-align: center;
-        padding: 1vw 2.5vw;
+        padding: 1.7vw 2.5vw;
         text-decoration: none;
         z-index: 5;
         transition: all 0.4s;
@@ -76,7 +121,7 @@
       color: #0D4776;
       text-align: center;
       justify-content: center;
-      width: 100vw;
+      width: 100%;
       z-index: 4;
     }
 
@@ -90,7 +135,7 @@
     .d0{
       width: 100vw;
       height: 4vw;
-      background-color: #F1A595;
+      background-color: #7fe0ea;
       z-index: 1;
     }
 
@@ -307,6 +352,116 @@
       z-index: 1;
       -webkit-animation: cloudemove8 30s infinite;
     }
+    .fish {
+      position: absolute;
+        opacity: 0.5;
+  
+      transition: all .2s}
+    .nemo2 {
+      background-image: url('pic/work/nemo2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 7vw;
+      width: 7vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      top: 155vw;
+      left: 70vw;
+      z-index: 3;
+      
+    }
+    .nemo1 {
+      background-image: url('pic/work/nemo1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 12vw;
+      width: 12vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      top: 165vw;
+      left: 25vw;
+      z-index: 3;
+      
+    }
+    .nemo3 {
+      background-image: url('pic/work/nemo2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 11vw;
+      width: 11vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      top: 160vw;
+      left: 10vw;
+      z-index: 3;
+      
+    }
+    .nemo4 {
+      background-image: url('pic/work/nemo1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 15vw;
+      width: 15vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      top: 175vw;
+      left: 20vw;
+      z-index: 3;
+      
+    }
+    .nemo5 {
+      background-image: url('pic/work/nemo2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 10vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      top: 150vw;
+      left: 50vw;
+      z-index: 3;
+      
+    }
+    .nemo6 {
+      background-image: url('pic/work/nemo2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 10vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      top: 165vw;
+      left: 55vw;
+      z-index: 3;
+      
+    }
+    .nemo7 {
+      background-image: url('pic/work/nemo2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 10vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      top: 200vw;
+      left: 75vw;
+      z-index: 3;
+      
+    }
 
     #bg1 {
       background-image: url('pic/travel/bridge.png');
@@ -333,7 +488,7 @@
       background-position: center bottom;
       background-repeat: no-repeat;
       position: relative;
-      top: -20vw;
+      top: -10vw;
       z-index: 2;
     }
  #bg3 {
@@ -407,7 +562,7 @@
       left: 20vw;
     }
     .pg {
-      font-family: 'Mitr', sans-serif;
+      font-family: 'Sarabun', sans-serif;
       margin: 0;
       border: 0;
       padding: 0;
@@ -430,66 +585,7 @@
       top: -25vw;
       left: 20vw;
     }
-    .list1 {
-      font-family: 'Prompt', sans-serif;
-      margin: 0;
-      border: 0;
-      padding: 0;
-      position: absolute;
-      color: #0D4776;
-      text-align: center;
-      justify-content: center;
-      width: 52vw;
-      z-index: 10;
-      display: inline-block;
-    }
-
-    .li1 {
-      font-size: 1.4vw;
-      top: 52vw;
-      left: 0vw;
-    }
-    .li2 {
-      font-size: 1.4vw;
-      top: 52vw;
-      left: 19vw;
-    }
-    .li3 {
-      font-size: 1.4vw;
-      top: 52vw;
-      left: 39vw;
-    }
-    .li4 {
-      font-size: 1.4vw;
-      top: 72vw;
-      left: 7vw;
-    }
-    .li5 {
-      font-size: 1.4vw;
-      top: 72vw;
-      left: 30vw;
-    }
-    .li6 {
-      font-size: 1.4vw;
-      top: 112vw;
-      left: 6vw;
-    }
-    .li7 {
-      font-size: 1.4vw;
-      top: 112vw;
-      left: 25vw;
-    }
-    .li8 {
-      font-size: 1.4vw;
-      top: 132vw;
-      left: 6vw;
-    }
-    .li9 {
-      font-size: 1.4vw;
-      top: 132vw;
-      left: 25vw;
-    }
-
+    
   
 @-webkit-keyframes cloudemove1 {
       from {left: 10vw;}
@@ -553,6 +649,49 @@
         position: relative;
         background-color: #89C6C4;
         z-index: 3;
+      }
+
+      .bar {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 18vw;
+        right: 0;
+        top: 0;
+        z-index: 10;
+      }
+
+      .fa-bars {
+        color: #0D4776;
+        position: fixed;
+        display: flex;
+        text-align: center;
+        vertical-align: middle;
+        align-items: flex-end;
+        z-index: 7;
+        padding: 5.3vw 7.5vw;
+        width: 7vw;
+        font-size: 7.5vw;
+      }
+
+      .fa-times {
+        color: #0D4776;
+        position: fixed;
+        display: flex;
+        text-align: center;
+        vertical-align: middle;
+        align-items: flex-end;
+        z-index: 7;
+        padding: 5.3vw 8vw;
+        width: 7vw;
+        font-size: 7.5vw;
+      }
+      .none {
+        color: #0D4776;
+        position: absolute;
+        z-index: 6;
+        width: 4vw;
+        font-size: 0vw;
       }
       #about {
         font-family: 'Prompt', sans-serif;
@@ -760,6 +899,117 @@
       z-index: 1;
       -webkit-animation: cloudemove8 30s infinite;
     }
+        .fish {
+      position: absolute;
+        opacity: 0.5;
+  
+      transition: all .2s}
+    .nemo2 {
+      background-image: url('pic/work/nemo2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 7vw;
+      width: 7vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      top: 100vw;
+      left: 70vw;
+      z-index: 3;
+      
+    }
+    .nemo1 {
+      background-image: url('pic/work/nemo1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 7vw;
+      width: 7vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      top: 85vw;
+      left: 25vw;
+      z-index: 3;
+      
+    }
+    .nemo3 {
+      background-image: url('pic/work/nemo2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 8vw;
+      width: 8vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      top: 100vw;
+      left: 30vw;
+      z-index: 3;
+      
+    }
+    .nemo4 {
+      background-image: url('pic/work/nemo1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 10vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      top: 105vw;
+      left: 30vw;
+      z-index: 3;
+      
+    }
+    .nemo5 {
+      background-image: url('pic/work/nemo2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 10vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      top: 95vw;
+      left: 50vw;
+      z-index: 3;
+      
+    }
+    .nemo6 {
+      background-image: url('pic/work/nemo2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 10vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      top: 80vw;
+      left: 55vw;
+      z-index: 3;
+      
+    }
+     .nemo7 {
+      background-image: url('pic/work/nemo2.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 10vw;
+      width: 10vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      top: 80vw;
+      left: 75vw;
+      z-index: 3;
+      
+    }
+
 
       .t1 {
         font-size: 3vw;
@@ -834,9 +1084,28 @@
   </style>
 </head>
 <body>
-	<div class="arrow">
-      <a id="click" href="index.html"></a>
-      <i class="fas fa-chevron-left"></i>
+	<div class="bar">
+    <div id="myLinks">
+
+      <div class="head">
+      <b><br>ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบน<br>อันเนื่องมาจากพระราชดำริ<br><br></b>
+    </div>
+      <a class="mbar" href="#blank"> </a>
+      <a class="mbar" href="#blank"> </a>
+      <a class="mbar" href="#blank"> </a>
+      <a class="mbar" href="#blank"> </a>
+      <a class="mbar" href="index.html">หน้าหลัก</a>
+      <a class="mbar" href="about.html">เกี่ยวกับ</a>
+      <a class="mbar" href="travel.html">สถานที่ท่องเที่ยว</a>
+      <a class="mbar" href="work.html">ผลงาน</a>
+      <a class="mbar" href="pro.html">โครงงานและงานกิจกรรม</a>
+      <a class="mbar" href="contact.html">ติดต่อ</a>
+    </div>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction0()">
+      <i id="menu" class="fas fa-bars"></i>
+      <i id="cross" class="fas fa-times none"></i>
+    </a>
   </div>  
 
     <div class="head">
@@ -886,10 +1155,30 @@
 บริเวณอ่าวคุ้งกระเบนและพื้นที่ใกล้เคียงตลอดจนแสดงระบบนิเวศวิทยาของอ่าวคุ้งกระเบน<br>
  และความสัมพันธ์ของสัตว์น้ำมีทั้งประเภทสวยงามและสัตว์น้ำที่มีคุณค่าทางเศรษฐกิจที่พบตาม<br>แนวปะการังและโขดหินตามแนวชายฝั่งชายหาดแหลมเสด็จ-ชายหาดบ้านเจ้าหลาว อาทิ เช่น<br> ปลากะพงขาว, ปลากะพงแดง, ปลากะรัง, ปลาสินสมุทร,ปลาการ์ตูน,ปลากระเบน เป็นต้น
 </p>
+      <div id="n1" class="fish nemo1"></div>
+      <div id="n2" class="fish nemo2"></div>
+      <div id="n3" class="fish nemo3"></div>
+      <div id="n4" class="fish nemo4"></div>
+      <div id="n5" class="fish nemo5"></div>
+      <div id="n6" class="fish nemo6"></div>
+      <div id="n7" class="fish nemo7"></div>
        <div id="bg4"></div>
       
     </div>
     <script type="text/javascript">
+
+      function myFunction0() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+          cross.classList.add("none");
+          menu.classList.remove("none");
+        } else {
+          x.style.display = "block";
+          menu.classList.add("none");
+          cross.classList.remove("none");
+        }
+      }
       
       window.onscroll = function() {myFunction()};
 
@@ -910,18 +1199,17 @@
           d0.classList.remove("d0");
         }
       }
-		/*function fishtank() {
+		function fishtank() {
 			let y = window.pageYOffset - d2.offsetTop + d2.offsetHeight;
 			console.log(y);
-			b1.style.marginTop = `-${y*2}px`;
-			n1.style.marginTop = `-${y*1.6}px`;
-			b2.style.marginTop = `-${y*1.75}px`;
-			b3.style.marginTop = `-${y*1.5}px`;
-			/*f5.style.marginTop = `-${y*0.7}px`;
+			n1.style.marginTop = `-${y*0.006}vw`;
+			n2.style.marginTop = `-${y*0.0075}vw`;
+      n3.style.marginTop = `-${y*0.009}vw`;
+      n4.style.marginTop = `-${y*0.004}vw`;
+      n5.style.marginTop = `-${y*0.005}vw`;
+      n6.style.marginTop = `-${y*0.003}vw`;
+      n7.style.marginTop = `-${y*0.0100}vw`;
 		}
 		window.addEventListener("scroll", fishtank);
-*/
     </script>
-
 </body>
-</html>

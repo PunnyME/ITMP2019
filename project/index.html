@@ -128,7 +128,7 @@
         height: 3vw;
         display: block;
         color: #0D4776;
-        font-size: 1vw;
+        text-shadow: 0em 0em 0.3em rgba(250,250,250, 0.3);
         text-align: center;
         padding: 1vw 2.5vw;
         text-decoration: none;
@@ -257,7 +257,7 @@
       position: absolute;
       z-index: 8;
       display: inline-block;
-      top: 49vw;
+      top: 83vw;
       left: 50vw;
     }
 
@@ -310,7 +310,7 @@
       position: absolute;
       z-index: 7;
       display: inline-block;
-      top: 40vw;
+      top: 77vw;
       right: 0%;
     }
 
@@ -325,8 +325,8 @@
       background-position: center bottom;
       background-repeat: no-repeat;
       position: absolute;
-      top: 85vw;
-      left: 45vw;
+      top: 42vw;
+      left: 56vw;
       z-index: 8;
       display: inline-block;
       
@@ -343,8 +343,8 @@
       background-position: center bottom;
       background-repeat: no-repeat;
       position: absolute;
-      top: 85vw;
-      left: 45vw;
+      top: 42vw;
+      left: 56vw;
       opacity: 0;
       z-index: 8;
       display: inline-block;
@@ -713,6 +713,31 @@
       z-index: 7;
     }
 
+    #footer {
+      width: 100%;
+      height: 8vw;
+      position: relative;
+      background-color: #dedede;
+      align-items: center;
+      bottom: 0%;
+      z-index: 7;
+    }
+
+    .footer {
+      font-family: 'Prompt', sans-serif;
+      margin: 0;
+      border: 0;
+      padding: 1.7vw 0vw;
+      font-size: 1vw;
+      position: absolute;
+      color: #777777;
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+      z-index: 10;
+      display: inline-block;
+    }
+
     .name {
       font-family: 'Prompt', sans-serif;
       margin: 0;
@@ -816,20 +841,20 @@
     }
 
     .p1 {
-      font-size: 1.6em;
+      font-size: 1.4vw;
       top: 57.8vw;
       left: 21vw;
     }
 
     .p2 {
-      font-size: 1.6em;
+      font-size: 1.4vw;
       top: 165.8vw;
       left: 15.5vw;
       color: #f4f4f4;
     }
 
     .p3 {
-      font-size: 1.6em;
+      font-size: 1.4vw;
       top: 71.8vw;
       left: 6vw;
     }
@@ -1260,9 +1285,9 @@
 
       #cover {
         height: 11.6vw;
-        width: 8.5vw;
+        width: 8.8vw;
         top: 293vw;
-        left: 81.3vw;
+        left: 81vw;
         z-index: 9;
       }
 
@@ -1273,29 +1298,36 @@
       }
 
       #center {
-        height: 43vw;
-        width: 71vw;
+        height: 60vw;
+        width: 100%;
         top: 37vw;
       }
 
+      #house {
+        height: 60vw;
+        width: 33vw;
+        top: 15.5vw;
+        left: 8.5vw;
+      }
+
       .fa-chevron-down {
-        top: 50vw;
-        left: 15.5vw;
+        top: 58vw;
+        left: 22.5vw;
         width: 4vw;
         font-size: 6vw;
       }
 
       #tree2 {
         background-image: url('pic/index/tree2_m.png');
-        height: 100vw;
-        width: 64vw;
+        height: 0vw;
+        width: 0vw;
         top: 13vw;
         right: 0%;
       }
 
       #bridge2 {
-        height: 60vw;
-        width: 100%;
+        height: 0vw;
+        width: 0vw;
         top: 91vw;
       }
 
@@ -1373,6 +1405,15 @@
         left: 25.5vw;
       }
 
+      #footer {
+        height: 20vw;
+      }
+
+      .footer {
+        padding: 5.3vw 0vw;
+        font-size: 2.1vw;
+      }
+
       .name {
         width: 60vw;
       }
@@ -1411,8 +1452,8 @@
 
       .t3 {
         font-size: 5vw;
-        top: 43.8vw;
-        left: 3vw;
+        top: 50.8vw;
+        left: 10vw;
         width: 30vw;
       }
 
@@ -1446,8 +1487,8 @@
 
       .p3 {
         font-size: 1.8em;
-        top: 71.8vw;
-        left: 3vw;
+        top: 85.8vw;
+        left: 8vw;
         width: 50vw;
       }
 
@@ -1537,8 +1578,6 @@
     </a>
   </div>
 
-  
-
       <header class="navigation">
         <nav>
           <div id="navback" class="navback"></div>
@@ -1620,8 +1659,15 @@
 
     <div id="d4">
       <div id="fishb"></div>
+      
     </div>
-
+    <div id="footer">
+        <h1 class="footer">
+            เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์ คณะสถาปัตยกรรมศาสตร์
+            <br>และการโปรแกรมและสื่อประสม แขนงวิชาการพัฒนาสื่อประสมและเกม คณะเทคโนโลยีสารสนเทศ
+            <br>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ©2019
+        </h1>
+      </div>
 
     <script type="text/javascript">
 
