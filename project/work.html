@@ -324,7 +324,7 @@
       background-position: center bottom;
       background-repeat: no-repeat;
       top: 35vw;
-      left: 75vw;
+      left: 90vw;
       z-index: 3;
       
     }
@@ -994,7 +994,7 @@
       background-size: contain;
       background-position: center bottom;
       background-repeat: no-repeat;
-      top: 100vw;
+      top: 150vw;
       left: 75vw;
       z-index: 3;
       
@@ -1009,7 +1009,7 @@
       background-size: contain;
       background-position: center bottom;
       background-repeat: no-repeat;
-      top: 230vw;
+      top: 250vw;
       left: 85vw;
       z-index: 3;
       
@@ -1025,7 +1025,7 @@
       background-position: center bottom;
       background-repeat: no-repeat;
       position: absolute;
-      top: 250vw;
+      top: 300vw;
       left: 60vw;
       z-index: 3;
    
@@ -1426,12 +1426,12 @@
     function fishtank() {
       let y = window.pageYOffset - d2.offsetTop + d2.offsetHeight;
       console.log(y);
-      b1.style.marginTop = `-${y*0.0135}vw`;
+      b1.style.marginTop = `-${y*0.0235}vw`;
       n1.style.marginTop = `-${y*0.0105}vw`;
-      b2.style.marginTop = `-${y*0.0205}vw`;
-      b3.style.marginTop = `-${y*0.0105}vw`;
+      b2.style.marginTop = `-${y*0.0405}vw`;
+      b3.style.marginTop = `-${y*0.0305}vw`;
       n2.style.marginTop = `-${y*0.0120}vw`;
-      n3.style.marginTop = `-${y*0.0300}vw`;
+      n3.style.marginTop = `-${y*0.0200}vw`;
       
     }
     window.addEventListener("scroll", fishtank);

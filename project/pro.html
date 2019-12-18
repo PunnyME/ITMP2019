@@ -209,8 +209,9 @@
     z-index: 3;
 }
 #d2-1{
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 #about {
       font-family: 'Prompt', sans-serif;
@@ -284,7 +285,7 @@
       background-repeat: no-repeat;
       position: absolute;
       z-index: 1;
-      -webkit-animation: sunrise 15s infinite;
+      -webkit-animation: sunrise 24s ease forwards;
     }
 #boat {
       background-image: url('pic/pro/boat.png');
@@ -376,11 +377,8 @@
       background-size: contain;
       background-position: center bottom;
       background-repeat: no-repeat;
-      position:absolute;
-      top: 120vw;
-      left: 5vw;
-      z-index: 3;
-      display: inline-block;}
+      position:relative;
+      }
      #ic2 {
       background-image: url('pic/pro/icon2.png');
       margin: 0;
@@ -391,11 +389,8 @@
       background-size: contain;
       background-position: center bottom;
       background-repeat: no-repeat;
-      position:absolute;
-      top: 120vw;
-      left: 35vw;
-      z-index: 3;
-      display: inline-block;}
+      position:relative;
+    }
       #ic3 {
       background-image: url('pic/pro/icon3.png');
       margin: 0;
@@ -406,11 +401,8 @@
       background-size: contain;
       background-position: center bottom;
       background-repeat: no-repeat;
-      position:absolute;
-      top: 120vw;
-      left: 65vw;
-      z-index: 3;
-      display: inline-block;}
+      position:relative;
+    }
     #bg2 {
       background-image: url('pic/pro/bg2.png');
       margin: 0;
@@ -493,13 +485,13 @@
       justify-content: center;
       color: #f4f4f4;
       font-size: 1.3vw;
-      top: 43vw;
+      top: 5vw;
       left: -10vw;
     }
     .p3 {
       color: #f4f4f4;
       font-size: 1.3vw;
-      top: 45vw;
+      top: 10vw;
       left: 10vw;
 
     }
@@ -508,14 +500,14 @@
       justify-content: center;
       color: #f4f4f4;
       font-size: 1.3vw;
-      top: 149vw;
+      top: 138vw;
       left: 21vw;
       position: absolute;
     }
     .p5 {
       color: #f4f4f4;
       font-size: 1.3vw;
-      top: 154vw;
+      top: 144vw;
       left: 41vw;
       position: absolute;
     }
@@ -525,14 +517,14 @@
       justify-content: center;
       color: #f4f4f4;
       font-size: 1.3vw;
-      top: 149vw;
+      top: 138vw;
       left: 52vw;
       position: absolute;
     }
     .p7 {
       color: #f4f4f4;
       font-size: 1.3vw;
-      top: 154vw;
+      top: 144vw;
       left: 72vw;
       position: absolute;
     }
@@ -565,7 +557,7 @@
   
 @-webkit-keyframes sunrise {
       from {top: 100vw;}
-      to {top: 0vw;}
+      to {top: 25vw;}
     }
 
     @-webkit-keyframes boat {
@@ -621,7 +613,7 @@
         }
     #d2 {
         width: 100%;
-        height: 200vw;
+        height: 300vw;
         position: relative;
         background-color: #e54629;
         z-index: 3;
@@ -758,7 +750,7 @@
       background-repeat: no-repeat;
       position: absolute;
       z-index: 1;
-      -webkit-animation: sunrise 50s infinite;
+      -webkit-animation: sunrise 24s ease forwards;
     }
       #boat {
       background-image: url('pic/pro/boat.png');
@@ -839,34 +831,34 @@
         width: 60vw;
       }
       .p3 {
+         position: absolute;
         font-size: 2vw;
-        top: 47vw;
-        left: 5vw;
-        width: 60vw;
+        top: 155vw;
+        left: 35vw;
+        width: 100%;
       }
       .p4 {
         font-size: 2.5vw;
-        top: 150vw;
-        left: 20vw;
+        top: 206vw;
+        left: 17vw;
         width: 60vw;
       }
       .p5 {
         font-size: 2vw;
-        top: 156vw;
+        top: 216vw;
         left: 35vw;
         width: 60vw;
       }
       .p6 {
         font-size: 2.5vw;
-        top: 150vw;
-        left: 45vw;
+        top: 266vw;
+        left: 17vw;
         width: 60vw;
       }
       .p7 {
         font-size: 2vw;
-        width: fit-content;
-        top: 157vw;
-        left: 65vw;
+        top: 276vw;
+        left: 35vw;
         width: 60vw;
       }
       #bg1 {
@@ -896,6 +888,22 @@
       position: relative;
       top: -40vw;
       z-index: 2;
+    }
+
+    #d2-1{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+    }
+    #ic1{
+      margin: 150px;
+    }
+    #ic2{
+      margin: 150px;
+    }
+    #ic3{
+      margin: 150px;
     }
      
      #footer {
